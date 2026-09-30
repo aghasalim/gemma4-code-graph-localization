@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "Does the code graph find the bug? Fault localisation with the Gemma 4 competition graphs"
+abstract: "A model-free benchmark of how often the Gemma 4 Developer Agent competition's code graph and embeddings point at the code a fix edits, compared with grep and BM25, plus an audit of the released data."
+type: software
+authors:
+  - family-names: Mustafazada
+    given-names: Aghasalim
+    orcid: "https://orcid.org/0009-0001-8746-4582"
+    affiliation: "Howest University of Applied Sciences"
+repository-code: "https://github.com/aghasalim/gemma4-code-graph-localization"
+url: "https://aghasalim.github.io/"
+license: MIT

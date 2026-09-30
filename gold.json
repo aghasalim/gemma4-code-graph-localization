@@ -1,0 +1,5401 @@
+[
+ {
+  "instance_id": "fastapi_15661",
+  "files": [
+   {
+    "path": "scripts/prepare_release.py",
+    "module": "scripts.prepare_release",
+    "new": true
+   }
+  ],
+  "loci": []
+ },
+ {
+  "instance_id": "fastapi_15588",
+  "files": [
+   {
+    "path": "fastapi/sse.py",
+    "module": "fastapi.sse",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/sse.py",
+    "name": "fastapi.sse._check_id_no_null",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/sse.py",
+    "name": "fastapi.sse.ServerSentEvent",
+    "async": false,
+    "class": true
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_15589",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.request_params_to_args",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_15030",
+  "files": [
+   {
+    "path": "docs_src/server_sent_events/tutorial001_py310.py",
+    "module": "server_sent_events.tutorial001_py310",
+    "new": true
+   },
+   {
+    "path": "docs_src/server_sent_events/tutorial002_py310.py",
+    "module": "server_sent_events.tutorial002_py310",
+    "new": true
+   },
+   {
+    "path": "docs_src/server_sent_events/tutorial003_py310.py",
+    "module": "server_sent_events.tutorial003_py310",
+    "new": true
+   },
+   {
+    "path": "docs_src/server_sent_events/tutorial004_py310.py",
+    "module": "server_sent_events.tutorial004_py310",
+    "new": true
+   },
+   {
+    "path": "docs_src/server_sent_events/tutorial005_py310.py",
+    "module": "server_sent_events.tutorial005_py310",
+    "new": true
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "module": "fastapi.openapi.utils",
+    "new": false
+   },
+   {
+    "path": "fastapi/responses.py",
+    "module": "fastapi.responses",
+    "new": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   },
+   {
+    "path": "fastapi/sse.py",
+    "module": "fastapi.sse",
+    "new": true
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_openapi_path",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.get_request_handler",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.app",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing._serialize_item",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRoute.__init__",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14962",
+  "files": [
+   {
+    "path": "docs_src/custom_response/tutorial010_py310.py",
+    "module": "custom_response.tutorial010_py310",
+    "new": false
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "module": "fastapi._compat.v2",
+    "new": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "docs_src/custom_response/tutorial010_py310.py",
+    "name": "custom_response.tutorial010_py310.read_items",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.ModelField",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.serialize_response",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.app",
+    "async": true,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_15280",
+  "files": [
+   {
+    "path": "docs_src/vibe/tutorial001_py310.py",
+    "module": "vibe.tutorial001_py310",
+    "new": true
+   },
+   {
+    "path": "fastapi/applications.py",
+    "module": "fastapi.applications",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/applications.py",
+    "name": "fastapi.applications.FastAPI",
+    "async": false,
+    "class": true
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14964",
+  "files": [
+   {
+    "path": "fastapi/responses.py",
+    "module": "fastapi.responses",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/responses.py",
+    "name": "fastapi.responses.UJSONResponse",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/responses.py",
+    "name": "fastapi.responses.ORJSONResponse",
+    "async": false,
+    "class": true
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_15023",
+  "files": [
+   {
+    "path": "docs_src/stream_data/tutorial002_py310.py",
+    "module": "stream_data.tutorial002_py310",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "docs_src/stream_data/tutorial002_py310.py",
+    "name": "stream_data.tutorial002_py310.stream_image",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "docs_src/stream_data/tutorial002_py310.py",
+    "name": "stream_data.tutorial002_py310.stream_image_no_async",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "docs_src/stream_data/tutorial002_py310.py",
+    "name": "stream_data.tutorial002_py310.stream_image_no_annotation",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "docs_src/stream_data/tutorial002_py310.py",
+    "name": "stream_data.tutorial002_py310.stream_image_no_async_no_annotation",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14986",
+  "files": [
+   {
+    "path": "fastapi/applications.py",
+    "module": "fastapi.applications",
+    "new": false
+   },
+   {
+    "path": "fastapi/openapi/docs.py",
+    "module": "fastapi.openapi.docs",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/applications.py",
+    "name": "fastapi.applications.FastAPI.setup",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/applications.py",
+    "name": "fastapi.applications.FastAPI.openapi",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/docs.py",
+    "name": "fastapi.openapi.docs.get_swagger_ui_html",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14978",
+  "files": [
+   {
+    "path": "docs_src/strict_content_type/tutorial001_py310.py",
+    "module": "strict_content_type.tutorial001_py310",
+    "new": true
+   },
+   {
+    "path": "fastapi/applications.py",
+    "module": "fastapi.applications",
+    "new": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/applications.py",
+    "name": "fastapi.applications.FastAPI.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.get_request_handler",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.app",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRoute.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRoute.get_route_handler",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRouter.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRouter.add_api_route",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRouter.include_router",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "requests_7505",
+  "files": [
+   {
+    "path": "src/requests/_types.py",
+    "module": "requests._types",
+    "new": false
+   },
+   {
+    "path": "src/requests/models.py",
+    "module": "requests.models",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "src/requests/models.py",
+    "name": "requests.models.RequestEncodingMixin._encode_params",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "src/requests/models.py",
+    "name": "requests.models.RequestEncodingMixin._encode_files",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "src/requests/models.py",
+    "name": "requests.models.PreparedRequest.prepare_body",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "requests_7502",
+  "files": [
+   {
+    "path": "src/requests/models.py",
+    "module": "requests.models",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "src/requests/models.py",
+    "name": "requests.models.RequestEncodingMixin._encode_files",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "requests_7433",
+  "files": [
+   {
+    "path": "src/requests/models.py",
+    "module": "requests.models",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "src/requests/models.py",
+    "name": "requests.models.PreparedRequest.prepare_body",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "requests_7427",
+  "files": [
+   {
+    "path": "src/requests/utils.py",
+    "module": "requests.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "src/requests/utils.py",
+    "name": "requests.utils.should_bypass_proxies",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "requests_7315",
+  "files": [
+   {
+    "path": "src/requests/adapters.py",
+    "module": "requests.adapters",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "src/requests/adapters.py",
+    "name": "requests.adapters.HTTPAdapter.request_url",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "requests_7328",
+  "files": [
+   {
+    "path": "src/requests/sessions.py",
+    "module": "requests.sessions",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "src/requests/sessions.py",
+    "name": "requests.sessions.SessionRedirectMixin.resolve_redirects",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "requests_7309",
+  "files": [
+   {
+    "path": "src/requests/utils.py",
+    "module": "requests.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "src/requests/utils.py",
+    "name": "requests.utils._parse_content_type_header",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "requests_7205",
+  "files": [
+   {
+    "path": "src/requests/utils.py",
+    "module": "requests.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "src/requests/utils.py",
+    "name": "requests.utils.get_netrc_auth",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_4070",
+  "files": [
+   {
+    "path": "rich/_emoji_replace.py",
+    "module": "rich._emoji_replace",
+    "new": false
+   },
+   {
+    "path": "rich/console.py",
+    "module": "rich.console",
+    "new": false
+   },
+   {
+    "path": "rich/emoji.py",
+    "module": "rich.emoji",
+    "new": false
+   },
+   {
+    "path": "rich/logging.py",
+    "module": "rich.logging",
+    "new": false
+   },
+   {
+    "path": "rich/protocol.py",
+    "module": "rich.protocol",
+    "new": false
+   },
+   {
+    "path": "rich/repr.py",
+    "module": "rich.repr",
+    "new": false
+   },
+   {
+    "path": "rich/segment.py",
+    "module": "rich.segment",
+    "new": false
+   },
+   {
+    "path": "rich/syntax.py",
+    "module": "rich.syntax",
+    "new": false
+   },
+   {
+    "path": "rich/theme.py",
+    "module": "rich.theme",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/_emoji_replace.py",
+    "name": "rich._emoji_replace._emoji_replace",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console.render",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console._collect_renderables",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console._caller_frame_info",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console.log",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console.input",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console.export_html",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console.export_svg",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/console.py",
+    "name": "rich.console._svg_hash",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/emoji.py",
+    "name": "rich.emoji.Emoji",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "rich/emoji.py",
+    "name": "rich.emoji.Emoji.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/logging.py",
+    "name": "rich.logging.RichHandler.emit",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/logging.py",
+    "name": "rich.logging.RichHandler.render_message",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/logging.py",
+    "name": "rich.logging.RichHandler.render",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/protocol.py",
+    "name": "rich.protocol.rich_cast",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/repr.py",
+    "name": "rich.repr.auto_rich_repr",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/theme.py",
+    "name": "rich.theme.Theme.from_file",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_4077",
+  "files": [
+   {
+    "path": "rich/file_proxy.py",
+    "module": "rich.file_proxy",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/file_proxy.py",
+    "name": "rich.file_proxy.FileProxy.fileno",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_4079",
+  "files": [
+   {
+    "path": "rich/markdown.py",
+    "module": "rich.markdown",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/markdown.py",
+    "name": "rich.markdown.TableDataElement.on_text",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_4076",
+  "files": [
+   {
+    "path": "rich/ansi.py",
+    "module": "rich.ansi",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/ansi.py",
+    "name": "rich.ansi.AnsiDecoder.decode",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_4075",
+  "files": [
+   {
+    "path": "rich/console.py",
+    "module": "rich.console",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console.print",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console.save_text",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_4006",
+  "files": [
+   {
+    "path": "rich/cells.py",
+    "module": "rich.cells",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/cells.py",
+    "name": "rich.cells.split_graphemes",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14258",
+  "files": [
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRouter.include_router",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14851",
+  "files": [
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRouter.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRouter",
+    "async": false,
+    "class": true
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14873",
+  "files": [
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRouter.__init__",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_13920",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.analyze_param",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14794",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.analyze_param",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14786",
+  "files": [
+   {
+    "path": "fastapi/security/utils.py",
+    "module": "fastapi.security.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/security/utils.py",
+    "name": "fastapi.security.utils.get_authorization_scheme_param",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14492",
+  "files": [
+   {
+    "path": "docs_src/metadata/tutorial001_1_py39.py",
+    "module": "metadata.tutorial001_1_py39",
+    "new": false
+   }
+  ],
+  "loci": []
+ },
+ {
+  "instance_id": "fastapi_14479",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.analyze_param",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14463",
+  "files": [
+   {
+    "path": "fastapi/openapi/utils.py",
+    "module": "fastapi.openapi.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_openapi_path",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_12942",
+  "files": [
+   {
+    "path": "fastapi/_compat.py",
+    "module": "fastapi._compat",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/_compat.py",
+    "name": "fastapi._compat.field_annotation_is_complex",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14099",
+  "files": [
+   {
+    "path": "docs_src/dependencies/tutorial013_an_py310.py",
+    "module": "dependencies.tutorial013_an_py310",
+    "new": true
+   },
+   {
+    "path": "docs_src/dependencies/tutorial014_an_py310.py",
+    "module": "dependencies.tutorial014_an_py310",
+    "new": true
+   },
+   {
+    "path": "fastapi/applications.py",
+    "module": "fastapi.applications",
+    "new": false
+   },
+   {
+    "path": "fastapi/middleware/asyncexitstack.py",
+    "module": "fastapi.middleware.asyncexitstack",
+    "new": true
+   },
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/applications.py",
+    "name": "fastapi.applications.FastAPI",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.app",
+    "async": true,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14609",
+  "files": [
+   {
+    "path": "docs_src/request_form_models/tutorial002_pv1_an_py39.py",
+    "module": "request_form_models.tutorial002_pv1_an_py39",
+    "new": false
+   },
+   {
+    "path": "docs_src/request_form_models/tutorial002_pv1_py39.py",
+    "module": "request_form_models.tutorial002_pv1_py39",
+    "new": false
+   },
+   {
+    "path": "fastapi/_compat/__init__.py",
+    "module": "fastapi._compat",
+    "new": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "module": "fastapi._compat.main",
+    "new": false
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "module": "fastapi._compat.may_v1",
+    "new": false
+   },
+   {
+    "path": "fastapi/_compat/model_field.py",
+    "module": "fastapi._compat.model_field",
+    "new": false
+   },
+   {
+    "path": "fastapi/_compat/shared.py",
+    "module": "fastapi._compat.shared",
+    "new": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "module": "fastapi._compat.v1",
+    "new": false
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "module": "fastapi._compat.v2",
+    "new": false
+   },
+   {
+    "path": "fastapi/datastructures.py",
+    "module": "fastapi.datastructures",
+    "new": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   },
+   {
+    "path": "fastapi/encoders.py",
+    "module": "fastapi.encoders",
+    "new": false
+   },
+   {
+    "path": "fastapi/exceptions.py",
+    "module": "fastapi.exceptions",
+    "new": false
+   },
+   {
+    "path": "fastapi/openapi/models.py",
+    "module": "fastapi.openapi.models",
+    "new": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "module": "fastapi.openapi.utils",
+    "new": false
+   },
+   {
+    "path": "fastapi/param_functions.py",
+    "module": "fastapi.param_functions",
+    "new": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "module": "fastapi.params",
+    "new": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "module": "fastapi.temp_pydantic_v1_params",
+    "new": false
+   },
+   {
+    "path": "fastapi/utils.py",
+    "module": "fastapi.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "docs_src/request_form_models/tutorial002_pv1_an_py39.py",
+    "name": "request_form_models.tutorial002_pv1_an_py39.FormData",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "docs_src/request_form_models/tutorial002_pv1_an_py39.py",
+    "name": "request_form_models.tutorial002_pv1_an_py39.FormData.Config",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "docs_src/request_form_models/tutorial002_pv1_an_py39.py",
+    "name": "request_form_models.tutorial002_pv1_an_py39.login",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "docs_src/request_form_models/tutorial002_pv1_py39.py",
+    "name": "request_form_models.tutorial002_pv1_py39.FormData",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "docs_src/request_form_models/tutorial002_pv1_py39.py",
+    "name": "request_form_models.tutorial002_pv1_py39.FormData.Config",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "docs_src/request_form_models/tutorial002_pv1_py39.py",
+    "name": "request_form_models.tutorial002_pv1_py39.login",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.get_cached_model_fields",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main._is_undefined",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main._get_model_config",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main._model_dump",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main._is_error_wrapper",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.copy_field_info",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.create_body_model",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.get_annotation_from_field_info",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.is_bytes_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.is_bytes_sequence_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.is_scalar_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.is_scalar_sequence_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.is_sequence_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.serialize_sequence_value",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.get_compat_model_name_map",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.get_definitions",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.get_schema_from_model_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main._is_model_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main._is_model_class",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.AnyUrl",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.BaseConfig",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.BaseModel",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.Color",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.CoreSchema",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.ErrorWrapper",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.FieldInfo",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.GetJsonSchemaHandler",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.JsonSchemaValue",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.ModelField",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.NameEmail",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.RequiredParam",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.SecretBytes",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.SecretStr",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.Undefined",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.UndefinedType",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.Url",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1.get_definitions",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1._normalize_errors",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "name": "fastapi._compat.may_v1._regenerate_error_with_loc",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/model_field.py",
+    "name": "fastapi._compat.model_field.ModelField",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/model_field.py",
+    "name": "fastapi._compat.model_field.ModelField.alias",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/model_field.py",
+    "name": "fastapi._compat.model_field.ModelField.required",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/model_field.py",
+    "name": "fastapi._compat.model_field.ModelField.default",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/model_field.py",
+    "name": "fastapi._compat.model_field.ModelField.type_",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/model_field.py",
+    "name": "fastapi._compat.model_field.ModelField.get_default",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/model_field.py",
+    "name": "fastapi._compat.model_field.ModelField.validate",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/model_field.py",
+    "name": "fastapi._compat.model_field.ModelField.serialize",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/shared.py",
+    "name": "fastapi._compat.shared._annotation_is_complex",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/shared.py",
+    "name": "fastapi._compat.shared.annotation_is_pydantic_v1",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.GenerateJsonSchema",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.PydanticSchemaGenerationError",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.with_info_plain_validator_function",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.get_model_definitions",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.is_pv1_scalar_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1._model_dump",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1._get_model_config",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.get_schema_from_model_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.get_definitions",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.is_scalar_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.is_sequence_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.is_bytes_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.is_bytes_sequence_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.copy_field_info",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.serialize_sequence_value",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.create_body_model",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1.get_model_fields",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.ModelField.validate",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.get_annotation_from_field_info",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2._model_dump",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2._get_model_config",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.get_model_name_map",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.get_long_model_name",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/datastructures.py",
+    "name": "fastapi.datastructures.UploadFile.__get_pydantic_json_schema__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/datastructures.py",
+    "name": "fastapi.datastructures.UploadFile.__get_pydantic_core_schema__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils._get_flat_fields_from_params",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_dependant",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.analyze_param",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils._validate_value_with_model_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils._get_multidict_value",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.request_params_to_args",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.is_union_of_base_models",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils._should_embed_body_fields",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils._extract_form_body",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.request_body_to_args",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_body_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/encoders.py",
+    "name": "fastapi.encoders.jsonable_encoder",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/models.py",
+    "name": "fastapi.openapi.models.EmailStr.__get_pydantic_json_schema__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/models.py",
+    "name": "fastapi.openapi.models.EmailStr.__get_pydantic_core_schema__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils._get_openapi_operation_parameters",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_openapi_operation_request_body",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_openapi_path",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_fields_from_routes",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/param_functions.py",
+    "name": "fastapi.param_functions.Path",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/param_functions.py",
+    "name": "fastapi.param_functions.Query",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/param_functions.py",
+    "name": "fastapi.param_functions.Header",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/param_functions.py",
+    "name": "fastapi.param_functions.Cookie",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/param_functions.py",
+    "name": "fastapi.param_functions.Body",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/param_functions.py",
+    "name": "fastapi.param_functions.Form",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/param_functions.py",
+    "name": "fastapi.param_functions.File",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "name": "fastapi.params.Param.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "name": "fastapi.params.Path.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "name": "fastapi.params.Query.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "name": "fastapi.params.Header.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "name": "fastapi.params.Cookie.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "name": "fastapi.params.Body.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "name": "fastapi.params.Form.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "name": "fastapi.params.File.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing._prepare_response_content",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.serialize_response",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.get_request_handler",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.app",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRoute.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Param",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Param.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Param.__repr__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Path",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Path.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Query",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Query.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Header",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Header.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Cookie",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Cookie.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Body",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Body.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Body.__repr__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Form",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Form.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.File",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.File.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/utils.py",
+    "name": "fastapi.utils.create_model_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/utils.py",
+    "name": "fastapi.utils.create_cloned_field",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14372",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "module": "fastapi.params",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.analyze_param",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14349",
+  "files": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "module": "fastapi._compat.v2",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2._replace_refs",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14512",
+  "files": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "module": "fastapi._compat.v2",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.ModelField.__post_init__",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14487",
+  "files": [
+   {
+    "path": "docs_src/handling_errors/tutorial004.py",
+    "module": "handling_errors.tutorial004",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "docs_src/handling_errors/tutorial004.py",
+    "name": "handling_errors.tutorial004.validation_exception_handler",
+    "async": true,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_11355",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_typed_signature",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_typed_return_annotation",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14485",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_typed_signature",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_typed_return_annotation",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14482",
+  "files": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "module": "fastapi._compat.v2",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.ModelField",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.ModelField.__post_init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.get_model_fields",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14306",
+  "files": [
+   {
+    "path": "fastapi/exceptions.py",
+    "module": "fastapi.exceptions",
+    "new": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/exceptions.py",
+    "name": "fastapi.exceptions.ValidationException.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/exceptions.py",
+    "name": "fastapi.exceptions.RequestValidationError.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/exceptions.py",
+    "name": "fastapi.exceptions.WebSocketRequestValidationError",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/exceptions.py",
+    "name": "fastapi.exceptions.ResponseValidationError.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/exceptions.py",
+    "name": "fastapi.exceptions.ResponseValidationError",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/exceptions.py",
+    "name": "fastapi.exceptions.ResponseValidationError.__str__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.serialize_response",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.app",
+    "async": true,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14458",
+  "files": [
+   {
+    "path": "fastapi/dependencies/models.py",
+    "module": "fastapi.dependencies.models",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant.is_gen_callable",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant.is_async_gen_callable",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant.is_coroutine_callable",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14459",
+  "files": [
+   {
+    "path": "fastapi/dependencies/models.py",
+    "module": "fastapi.dependencies.models",
+    "new": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "module": "fastapi.openapi.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.SecurityRequirement",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant._uses_scopes",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_flat_dependant",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_dependant",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_openapi_security_definitions",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14448",
+  "files": [
+   {
+    "path": "fastapi/dependencies/models.py",
+    "module": "fastapi.dependencies.models",
+    "new": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant._unwrapped_call",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant.is_gen_callable",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant.is_async_gen_callable",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant.is_coroutine_callable",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils._solve_generator",
+    "async": true,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14455",
+  "files": [
+   {
+    "path": "fastapi/openapi/utils.py",
+    "module": "fastapi.openapi.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_openapi_security_definitions",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_9753",
+  "files": [
+   {
+    "path": "fastapi/dependencies/models.py",
+    "module": "fastapi.dependencies.models",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant._unwrapped_call",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14430",
+  "files": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "module": "fastapi._compat.v2",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.serialize_sequence_value",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_5077",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_typed_signature",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_typed_return_annotation",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_9555",
+  "files": [
+   {
+    "path": "fastapi/dependencies/models.py",
+    "module": "fastapi.dependencies.models",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant.is_gen_callable",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant.is_async_gen_callable",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant.is_coroutine_callable",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14361",
+  "files": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "module": "fastapi._compat.v2",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2._remap_definitions_and_field_mappings",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_13207",
+  "files": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "module": "fastapi._compat.v2",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.get_schema_from_model_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.get_definitions",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14360",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.request_params_to_args",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14356",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.request_params_to_args",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_5624",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_dependant",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14419",
+  "files": [
+   {
+    "path": "fastapi/dependencies/models.py",
+    "module": "fastapi.dependencies.models",
+    "new": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant.cache_key",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_parameterless_sub_dependant",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_dependant",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.solve_dependencies",
+    "async": true,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14301",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_parameterless_sub_dependant",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14262",
+  "files": [
+   {
+    "path": "docs_src/dependencies/tutorial008e.py",
+    "module": "dependencies.tutorial008e",
+    "new": true
+   },
+   {
+    "path": "docs_src/dependencies/tutorial008e_an.py",
+    "module": "dependencies.tutorial008e_an",
+    "new": true
+   },
+   {
+    "path": "docs_src/dependencies/tutorial008e_an_py39.py",
+    "module": "dependencies.tutorial008e_an_py39",
+    "new": true
+   },
+   {
+    "path": "fastapi/dependencies/models.py",
+    "module": "fastapi.dependencies.models",
+    "new": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   },
+   {
+    "path": "fastapi/exceptions.py",
+    "module": "fastapi.exceptions",
+    "new": false
+   },
+   {
+    "path": "fastapi/param_functions.py",
+    "module": "fastapi.param_functions",
+    "new": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "module": "fastapi.params",
+    "new": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   },
+   {
+    "path": "fastapi/types.py",
+    "module": "fastapi.types",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/dependencies/models.py",
+    "name": "fastapi.dependencies.models.Dependant.__post_init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_flat_dependant",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_dependant",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.is_coroutine_callable",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.is_async_gen_callable",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.is_gen_callable",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.solve_generator",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.SolvedDependency",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.solve_dependencies",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/param_functions.py",
+    "name": "fastapi.param_functions.Depends",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "name": "fastapi.params.Depends",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.app",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIWebSocketRoute.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRoute.__init__",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14266",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_dependant",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14246",
+  "files": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "module": "fastapi._compat.v2",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.get_definitions",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14186",
+  "files": [
+   {
+    "path": "fastapi/_compat/__init__.py",
+    "module": "fastapi._compat",
+    "new": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "module": "fastapi._compat.main",
+    "new": false
+   },
+   {
+    "path": "fastapi/_compat/may_v1.py",
+    "module": "fastapi._compat.may_v1",
+    "new": true
+   },
+   {
+    "path": "fastapi/_compat/shared.py",
+    "module": "fastapi._compat.shared",
+    "new": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "module": "fastapi._compat.v1",
+    "new": false
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "module": "fastapi._compat.v2",
+    "new": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   },
+   {
+    "path": "fastapi/encoders.py",
+    "module": "fastapi.encoders",
+    "new": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "module": "fastapi.temp_pydantic_v1_params",
+    "new": false
+   },
+   {
+    "path": "fastapi/utils.py",
+    "module": "fastapi.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.get_cached_model_fields",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main._is_undefined",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main._get_model_config",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main._model_dump",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main._is_error_wrapper",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.copy_field_info",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.create_body_model",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.get_annotation_from_field_info",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.is_bytes_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.is_bytes_sequence_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.is_scalar_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.is_scalar_sequence_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.is_sequence_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.serialize_sequence_value",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main._model_rebuild",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.get_compat_model_name_map",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.get_definitions",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main.get_schema_from_model_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main._is_model_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/main.py",
+    "name": "fastapi._compat.main._is_model_class",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/shared.py",
+    "name": "fastapi._compat.shared._annotation_is_complex",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/shared.py",
+    "name": "fastapi._compat.shared.annotation_is_pydantic_v1",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1._normalize_errors",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v1.py",
+    "name": "fastapi._compat.v1._regenerate_error_with_loc",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.ModelField.validate",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.analyze_param",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils._validate_value_with_model_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/encoders.py",
+    "name": "fastapi.encoders.jsonable_encoder",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/utils.py",
+    "name": "fastapi.utils.create_model_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/utils.py",
+    "name": "fastapi.utils.create_cloned_field",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_9425",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_typed_annotation",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_13713",
+  "files": [
+   {
+    "path": "fastapi/applications.py",
+    "module": "fastapi.applications",
+    "new": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "module": "fastapi.openapi.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/applications.py",
+    "name": "fastapi.applications.FastAPI.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/applications.py",
+    "name": "fastapi.applications.FastAPI.openapi",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_openapi",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14077",
+  "files": [
+   {
+    "path": "docs_src/handling_errors/tutorial005.py",
+    "module": "handling_errors.tutorial005",
+    "new": false
+   },
+   {
+    "path": "fastapi/exception_handlers.py",
+    "module": "fastapi.exception_handlers",
+    "new": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "module": "fastapi.openapi.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "docs_src/handling_errors/tutorial005.py",
+    "name": "handling_errors.tutorial005.validation_exception_handler",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/exception_handlers.py",
+    "name": "fastapi.exception_handlers.request_validation_exception_handler",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_openapi_path",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3718",
+  "files": [
+   {
+    "path": "rich/panel.py",
+    "module": "rich.panel",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/panel.py",
+    "name": "rich.panel.Panel.__rich_console__",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3934",
+  "files": [
+   {
+    "path": "rich/live.py",
+    "module": "rich.live",
+    "new": false
+   },
+   {
+    "path": "rich/live_render.py",
+    "module": "rich.live_render",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/live.py",
+    "name": "rich.live.Live.stop",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/live_render.py",
+    "name": "rich.live_render.LiveRender",
+    "async": false,
+    "class": true
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3953",
+  "files": [
+   {
+    "path": "rich/cells.py",
+    "module": "rich.cells",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/cells.py",
+    "name": "rich.cells.get_character_cell_size",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/cells.py",
+    "name": "rich.cells._cell_len",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3944",
+  "files": [
+   {
+    "path": "rich/cells.py",
+    "module": "rich.cells",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/cells.py",
+    "name": "rich.cells.get_character_cell_size",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3942",
+  "files": [
+   {
+    "path": "rich/default_styles.py",
+    "module": "rich.default_styles",
+    "new": false
+   },
+   {
+    "path": "rich/markdown.py",
+    "module": "rich.markdown",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/markdown.py",
+    "name": "rich.markdown.Heading",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "rich/markdown.py",
+    "name": "rich.markdown.Heading.__rich_console__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/markdown.py",
+    "name": "rich.markdown.HorizontalRule.__rich_console__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/markdown.py",
+    "name": "rich.markdown.TableElement.__rich_console__",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3938",
+  "files": [
+   {
+    "path": "rich/console.py",
+    "module": "rich.console",
+    "new": false
+   },
+   {
+    "path": "rich/segment.py",
+    "module": "rich.segment",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console.print",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/segment.py",
+    "name": "rich.segment.Segment",
+    "async": false,
+    "class": true
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3882",
+  "files": [
+   {
+    "path": "rich/prompt.py",
+    "module": "rich.prompt",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/prompt.py",
+    "name": "rich.prompt.PromptBase.on_validate_error",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3894",
+  "files": [
+   {
+    "path": "rich/_inspect.py",
+    "module": "rich._inspect",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/_inspect.py",
+    "name": "rich._inspect.Inspect._get_signature",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3935",
+  "files": [
+   {
+    "path": "rich/table.py",
+    "module": "rich.table",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/table.py",
+    "name": "rich.table.Table.__rich_console__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/table.py",
+    "name": "rich.table.Table._calculate_column_widths",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/table.py",
+    "name": "rich.table.Table._get_padding_width",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/table.py",
+    "name": "rich.table.Table._measure_column",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/table.py",
+    "name": "rich.table.Table._render",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3905",
+  "files": [
+   {
+    "path": "rich/progress.py",
+    "module": "rich.progress",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/progress.py",
+    "name": "rich.progress.Progress.stop",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3930",
+  "files": [
+   {
+    "path": "rich/__main__.py",
+    "module": "rich.__main__",
+    "new": false
+   },
+   {
+    "path": "rich/_cell_widths.py",
+    "module": "rich._cell_widths",
+    "new": false
+   },
+   {
+    "path": "rich/_unicode_data/__init__.py",
+    "module": "rich._unicode_data",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/_versions.py",
+    "module": "rich._unicode_data._versions",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode10-0-0.py",
+    "module": "rich._unicode_data.unicode10-0-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode11-0-0.py",
+    "module": "rich._unicode_data.unicode11-0-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode12-0-0.py",
+    "module": "rich._unicode_data.unicode12-0-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode12-1-0.py",
+    "module": "rich._unicode_data.unicode12-1-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode13-0-0.py",
+    "module": "rich._unicode_data.unicode13-0-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode14-0-0.py",
+    "module": "rich._unicode_data.unicode14-0-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode15-0-0.py",
+    "module": "rich._unicode_data.unicode15-0-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode15-1-0.py",
+    "module": "rich._unicode_data.unicode15-1-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode16-0-0.py",
+    "module": "rich._unicode_data.unicode16-0-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode17-0-0.py",
+    "module": "rich._unicode_data.unicode17-0-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode4-1-0.py",
+    "module": "rich._unicode_data.unicode4-1-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode5-0-0.py",
+    "module": "rich._unicode_data.unicode5-0-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode5-1-0.py",
+    "module": "rich._unicode_data.unicode5-1-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode5-2-0.py",
+    "module": "rich._unicode_data.unicode5-2-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode6-0-0.py",
+    "module": "rich._unicode_data.unicode6-0-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode6-1-0.py",
+    "module": "rich._unicode_data.unicode6-1-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode6-2-0.py",
+    "module": "rich._unicode_data.unicode6-2-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode6-3-0.py",
+    "module": "rich._unicode_data.unicode6-3-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode7-0-0.py",
+    "module": "rich._unicode_data.unicode7-0-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode8-0-0.py",
+    "module": "rich._unicode_data.unicode8-0-0",
+    "new": true
+   },
+   {
+    "path": "rich/_unicode_data/unicode9-0-0.py",
+    "module": "rich._unicode_data.unicode9-0-0",
+    "new": true
+   },
+   {
+    "path": "rich/cells.py",
+    "module": "rich.cells",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/cells.py",
+    "name": "rich.cells.cached_cell_len",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/cells.py",
+    "name": "rich.cells.cell_len",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/cells.py",
+    "name": "rich.cells.get_character_cell_size",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/cells.py",
+    "name": "rich.cells.set_cell_size",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/cells.py",
+    "name": "rich.cells.chop_cells",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "httpx_3672",
+  "files": [
+   {
+    "path": "src/ahttpx/_parsers.py",
+    "module": "ahttpx._parsers",
+    "new": false
+   },
+   {
+    "path": "src/ahttpx/_pool.py",
+    "module": "ahttpx._pool",
+    "new": false
+   },
+   {
+    "path": "src/ahttpx/_server.py",
+    "module": "ahttpx._server",
+    "new": false
+   },
+   {
+    "path": "src/httpx/_network.py",
+    "module": "httpx._network",
+    "new": false
+   },
+   {
+    "path": "src/httpx/_parsers.py",
+    "module": "httpx._parsers",
+    "new": false
+   },
+   {
+    "path": "src/httpx/_pool.py",
+    "module": "httpx._pool",
+    "new": false
+   },
+   {
+    "path": "src/httpx/_server.py",
+    "module": "httpx._server",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "src/ahttpx/_parsers.py",
+    "name": "ahttpx._parsers.HTTPParser.complete",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "src/ahttpx/_parsers.py",
+    "name": "ahttpx._parsers.HTTPParser",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "src/ahttpx/_pool.py",
+    "name": "ahttpx._pool.Connection.send",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "src/ahttpx/_pool.py",
+    "name": "ahttpx._pool.Connection",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "src/ahttpx/_pool.py",
+    "name": "ahttpx._pool.Connection._complete",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "src/ahttpx/_server.py",
+    "name": "ahttpx._server.HTTPConnection.handle_requests",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "src/ahttpx/_server.py",
+    "name": "ahttpx._server.HTTPConnection._complete",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "src/httpx/_network.py",
+    "name": "httpx._network.NetworkStream",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "src/httpx/_network.py",
+    "name": "httpx._network.NetworkServer.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "src/httpx/_network.py",
+    "name": "httpx._network.NetworkServer.__exit__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "src/httpx/_network.py",
+    "name": "httpx._network.NetworkServer._serve",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "src/httpx/_parsers.py",
+    "name": "httpx._parsers.HTTPParser.complete",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "src/httpx/_parsers.py",
+    "name": "httpx._parsers.HTTPParser",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "src/httpx/_pool.py",
+    "name": "httpx._pool.Connection.send",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "src/httpx/_pool.py",
+    "name": "httpx._pool.Connection",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "src/httpx/_pool.py",
+    "name": "httpx._pool.Connection._complete",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "src/httpx/_server.py",
+    "name": "httpx._server.HTTPConnection.handle_requests",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "src/httpx/_server.py",
+    "name": "httpx._server.HTTPConnection._complete",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "src/httpx/_server.py",
+    "name": "httpx._server.HTTPServer.wait",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14791",
+  "files": [
+   {
+    "path": "fastapi/openapi/utils.py",
+    "module": "fastapi.openapi.utils",
+    "new": false
+   }
+  ],
+  "loci": []
+ },
+ {
+  "instance_id": "fastapi_15800",
+  "files": [
+   {
+    "path": "docs_src/frontend/tutorial001_py310.py",
+    "module": "frontend.tutorial001_py310",
+    "new": true
+   },
+   {
+    "path": "docs_src/frontend/tutorial002_py310.py",
+    "module": "frontend.tutorial002_py310",
+    "new": true
+   },
+   {
+    "path": "docs_src/frontend/tutorial003_py310.py",
+    "module": "frontend.tutorial003_py310",
+    "new": true
+   },
+   {
+    "path": "docs_src/frontend/tutorial004_py310.py",
+    "module": "frontend.tutorial004_py310",
+    "new": true
+   },
+   {
+    "path": "docs_src/frontend/tutorial005_py310.py",
+    "module": "frontend.tutorial005_py310",
+    "new": true
+   },
+   {
+    "path": "docs_src/frontend/tutorial006_py310.py",
+    "module": "frontend.tutorial006_py310",
+    "new": true
+   },
+   {
+    "path": "fastapi/applications.py",
+    "module": "fastapi.applications",
+    "new": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/applications.py",
+    "name": "fastapi.applications.FastAPI",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing._RouterIncludeContext.path_for",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing._IncludedRouter",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing._IncludedRouter._build_effective_context",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRouter.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRouter",
+    "async": false,
+    "class": true
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_15785",
+  "files": [
+   {
+    "path": "fastapi/openapi/utils.py",
+    "module": "fastapi.openapi.utils",
+    "new": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils._get_api_route_for_openapi",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_fields_from_routes",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_openapi",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14371",
+  "files": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "module": "fastapi._compat.v2",
+    "new": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "module": "fastapi.openapi.utils",
+    "new": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "module": "fastapi.params",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.ModelField",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.get_schema_from_model_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils._get_multidict_value",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.request_params_to_args",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils._extract_form_body",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.request_body_to_args",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_body_field",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils._get_openapi_operation_parameters",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "name": "fastapi.params.Param.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "name": "fastapi.params.Body.__init__",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14605",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   },
+   {
+    "path": "fastapi/exceptions.py",
+    "module": "fastapi.exceptions",
+    "new": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "module": "fastapi.openapi.utils",
+    "new": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "module": "fastapi.params",
+    "new": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "module": "fastapi.temp_pydantic_v1_params",
+    "new": false
+   },
+   {
+    "path": "fastapi/utils.py",
+    "module": "fastapi.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_dependant",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/exceptions.py",
+    "name": "fastapi.exceptions.ResponseValidationError.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.generate_operation_id",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "name": "fastapi.params.Param.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/params.py",
+    "name": "fastapi.params.Body.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRoute.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Param.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/temp_pydantic_v1_params.py",
+    "name": "fastapi.temp_pydantic_v1_params.Body.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/utils.py",
+    "name": "fastapi.utils.generate_operation_id_for_path",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_15763",
+  "files": [
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRouter.include_router",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14583",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils.get_dependant",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRoute.__init__",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_15745",
+  "files": [
+   {
+    "path": "docs_src/path_operation_advanced_configuration/tutorial002_py310.py",
+    "module": "path_operation_advanced_configuration.tutorial002_py310",
+    "new": false
+   },
+   {
+    "path": "fastapi/applications.py",
+    "module": "fastapi.applications",
+    "new": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "module": "fastapi.openapi.utils",
+    "new": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "module": "fastapi.routing",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "docs_src/path_operation_advanced_configuration/tutorial002_py310.py",
+    "name": "path_operation_advanced_configuration.tutorial002_py310.read_items",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "docs_src/path_operation_advanced_configuration/tutorial002_py310.py",
+    "name": "path_operation_advanced_configuration.tutorial002_py310.use_route_names_as_operation_ids",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/applications.py",
+    "name": "fastapi.applications.FastAPI.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/applications.py",
+    "name": "fastapi.applications.FastAPI.openapi",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.generate_operation_id",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.generate_operation_summary",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_openapi_operation_metadata",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_openapi_path",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_fields_from_routes",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/openapi/utils.py",
+    "name": "fastapi.openapi.utils.get_openapi",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRoute.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRoute.get_route_handler",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRoute.matches",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRouter.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRouter.add_api_route",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRouter.add_api_websocket_route",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/routing.py",
+    "name": "fastapi.routing.APIRouter.include_router",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14297",
+  "files": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "module": "fastapi._compat.v2",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/_compat/v2.py",
+    "name": "fastapi._compat.v2.serialize_sequence_value",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14303",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils._extract_form_body",
+    "async": true,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_13537",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils._extract_form_body",
+    "async": true,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14953",
+  "files": [
+   {
+    "path": "docs_src/json_base64_bytes/tutorial001_py310.py",
+    "module": "json_base64_bytes.tutorial001_py310",
+    "new": true
+   },
+   {
+    "path": "fastapi/_compat/v2.py",
+    "module": "fastapi._compat.v2",
+    "new": false
+   },
+   {
+    "path": "fastapi/datastructures.py",
+    "module": "fastapi.datastructures",
+    "new": false
+   },
+   {
+    "path": "scripts/playwright/json_base64_bytes/image01.py",
+    "module": "scripts.playwright.json_base64_bytes.image01",
+    "new": true
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/datastructures.py",
+    "name": "fastapi.datastructures.UploadFile.__get_pydantic_json_schema__",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_13786",
+  "files": [
+   {
+    "path": "docs_src/authentication_error_status_code/tutorial001_an.py",
+    "module": "authentication_error_status_code.tutorial001_an",
+    "new": true
+   },
+   {
+    "path": "docs_src/authentication_error_status_code/tutorial001_an_py39.py",
+    "module": "authentication_error_status_code.tutorial001_an_py39",
+    "new": true
+   },
+   {
+    "path": "docs_src/security/tutorial003.py",
+    "module": "security.tutorial003",
+    "new": false
+   },
+   {
+    "path": "docs_src/security/tutorial003_an.py",
+    "module": "security.tutorial003_an",
+    "new": false
+   },
+   {
+    "path": "docs_src/security/tutorial003_an_py310.py",
+    "module": "security.tutorial003_an_py310",
+    "new": false
+   },
+   {
+    "path": "docs_src/security/tutorial003_an_py39.py",
+    "module": "security.tutorial003_an_py39",
+    "new": false
+   },
+   {
+    "path": "docs_src/security/tutorial003_py310.py",
+    "module": "security.tutorial003_py310",
+    "new": false
+   },
+   {
+    "path": "fastapi/security/api_key.py",
+    "module": "fastapi.security.api_key",
+    "new": false
+   },
+   {
+    "path": "fastapi/security/http.py",
+    "module": "fastapi.security.http",
+    "new": false
+   },
+   {
+    "path": "fastapi/security/oauth2.py",
+    "module": "fastapi.security.oauth2",
+    "new": false
+   },
+   {
+    "path": "fastapi/security/open_id_connect_url.py",
+    "module": "fastapi.security.open_id_connect_url",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "docs_src/security/tutorial003.py",
+    "name": "security.tutorial003.get_current_user",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "docs_src/security/tutorial003_an.py",
+    "name": "security.tutorial003_an.get_current_user",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "docs_src/security/tutorial003_an_py310.py",
+    "name": "security.tutorial003_an_py310.get_current_user",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "docs_src/security/tutorial003_an_py39.py",
+    "name": "security.tutorial003_an_py39.get_current_user",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "docs_src/security/tutorial003_py310.py",
+    "name": "security.tutorial003_py310.get_current_user",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/api_key.py",
+    "name": "fastapi.security.api_key.APIKeyBase",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/security/api_key.py",
+    "name": "fastapi.security.api_key.APIKeyBase.check_api_key",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/api_key.py",
+    "name": "fastapi.security.api_key.APIKeyQuery.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/api_key.py",
+    "name": "fastapi.security.api_key.APIKeyQuery.__call__",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/api_key.py",
+    "name": "fastapi.security.api_key.APIKeyHeader.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/api_key.py",
+    "name": "fastapi.security.api_key.APIKeyHeader.__call__",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/api_key.py",
+    "name": "fastapi.security.api_key.APIKeyCookie.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/api_key.py",
+    "name": "fastapi.security.api_key.APIKeyCookie.__call__",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/http.py",
+    "name": "fastapi.security.http.HTTPBase.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/http.py",
+    "name": "fastapi.security.http.HTTPBase",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/security/http.py",
+    "name": "fastapi.security.http.HTTPBase.__call__",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/http.py",
+    "name": "fastapi.security.http.HTTPBasic",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/security/http.py",
+    "name": "fastapi.security.http.HTTPBasic.__call__",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/http.py",
+    "name": "fastapi.security.http.HTTPBearer.__call__",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/http.py",
+    "name": "fastapi.security.http.HTTPDigest",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/security/http.py",
+    "name": "fastapi.security.http.HTTPDigest.__call__",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/oauth2.py",
+    "name": "fastapi.security.oauth2.OAuth2",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/security/oauth2.py",
+    "name": "fastapi.security.oauth2.OAuth2.__call__",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/oauth2.py",
+    "name": "fastapi.security.oauth2.OAuth2PasswordBearer.__call__",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/oauth2.py",
+    "name": "fastapi.security.oauth2.OAuth2AuthorizationCodeBearer.__call__",
+    "async": true,
+    "class": false
+   },
+   {
+    "path": "fastapi/security/open_id_connect_url.py",
+    "name": "fastapi.security.open_id_connect_url.OpenIdConnect",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "fastapi/security/open_id_connect_url.py",
+    "name": "fastapi.security.open_id_connect_url.OpenIdConnect.__call__",
+    "async": true,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_14616",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils._get_multidict_value",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "fastapi_11194",
+  "files": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "module": "fastapi.dependencies.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "fastapi/dependencies/utils.py",
+    "name": "fastapi.dependencies.utils._extract_form_body",
+    "async": true,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "requests_6757",
+  "files": [
+   {
+    "path": "src/requests/compat.py",
+    "module": "requests.compat",
+    "new": false
+   },
+   {
+    "path": "src/requests/utils.py",
+    "module": "requests.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "src/requests/utils.py",
+    "name": "requests.utils.super_len",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "requests_6629",
+  "files": [
+   {
+    "path": "src/requests/exceptions.py",
+    "module": "requests.exceptions",
+    "new": false
+   }
+  ],
+  "loci": []
+ },
+ {
+  "instance_id": "requests_6644",
+  "files": [
+   {
+    "path": "src/requests/adapters.py",
+    "module": "requests.adapters",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "src/requests/adapters.py",
+    "name": "requests.adapters.HTTPAdapter.request_url",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "requests_6589",
+  "files": [
+   {
+    "path": "src/requests/utils.py",
+    "module": "requests.utils",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "src/requests/utils.py",
+    "name": "requests.utils.super_len",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "requests_6592",
+  "files": [
+   {
+    "path": "src/requests/status_codes.py",
+    "module": "requests.status_codes",
+    "new": false
+   }
+  ],
+  "loci": []
+ },
+ {
+  "instance_id": "rich_3180",
+  "files": [
+   {
+    "path": "rich/_wrap.py",
+    "module": "rich._wrap",
+    "new": false
+   },
+   {
+    "path": "rich/cells.py",
+    "module": "rich.cells",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/_wrap.py",
+    "name": "rich._wrap.words",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/_wrap.py",
+    "name": "rich._wrap.divide_line",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/cells.py",
+    "name": "rich.cells.chop_cells",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3486",
+  "files": [
+   {
+    "path": "rich/default_styles.py",
+    "module": "rich.default_styles",
+    "new": false
+   },
+   {
+    "path": "rich/syntax.py",
+    "module": "rich.syntax",
+    "new": false
+   },
+   {
+    "path": "rich/traceback.py",
+    "module": "rich.traceback",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/syntax.py",
+    "name": "rich.syntax._SyntaxHighlightRange",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "rich/syntax.py",
+    "name": "rich.syntax.Syntax.stylize_range",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/syntax.py",
+    "name": "rich.syntax.Syntax._apply_stylized_ranges",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/traceback.py",
+    "name": "rich.traceback.Frame",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "rich/traceback.py",
+    "name": "rich.traceback.Traceback.extract",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/traceback.py",
+    "name": "rich.traceback.Traceback._render_stack",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/traceback.py",
+    "name": "rich.traceback.bar",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/traceback.py",
+    "name": "rich.traceback.error",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3777",
+  "files": [
+   {
+    "path": "rich/console.py",
+    "module": "rich.console",
+    "new": false
+   },
+   {
+    "path": "rich/diagnose.py",
+    "module": "rich.diagnose",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/diagnose.py",
+    "name": "rich.diagnose.report",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3468",
+  "files": [
+   {
+    "path": "rich/console.py",
+    "module": "rich.console",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console.render_lines",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console.render_str",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console._check_buffer",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3782",
+  "files": [
+   {
+    "path": "rich/syntax.py",
+    "module": "rich.syntax",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/syntax.py",
+    "name": "rich.syntax.Syntax.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/syntax.py",
+    "name": "rich.syntax.Syntax",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "rich/syntax.py",
+    "name": "rich.syntax.Syntax.guess_lexer",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/syntax.py",
+    "name": "rich.syntax.Syntax.__rich_measure__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/syntax.py",
+    "name": "rich.syntax.Syntax.__rich_console__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/syntax.py",
+    "name": "rich.syntax.Syntax._get_syntax",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3772",
+  "files": [
+   {
+    "path": "rich/traceback.py",
+    "module": "rich.traceback",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/traceback.py",
+    "name": "rich.traceback.Traceback.extract",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3296",
+  "files": [
+   {
+    "path": "rich/syntax.py",
+    "module": "rich.syntax",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/syntax.py",
+    "name": "rich.syntax.Syntax.__rich_console__",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3675",
+  "files": [
+   {
+    "path": "rich/console.py",
+    "module": "rich.console",
+    "new": false
+   },
+   {
+    "path": "rich/diagnose.py",
+    "module": "rich.diagnose",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.decorator",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console.is_terminal",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/diagnose.py",
+    "name": "rich.diagnose.report",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3676",
+  "files": [
+   {
+    "path": "rich/default_styles.py",
+    "module": "rich.default_styles",
+    "new": false
+   },
+   {
+    "path": "rich/traceback.py",
+    "module": "rich.traceback",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/traceback.py",
+    "name": "rich.traceback._SyntaxError",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "rich/traceback.py",
+    "name": "rich.traceback.Stack",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "rich/traceback.py",
+    "name": "rich.traceback.Traceback.extract",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/traceback.py",
+    "name": "rich.traceback.Traceback.get_locals",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/traceback.py",
+    "name": "rich.traceback.Traceback.__rich_console__",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3518",
+  "files": [
+   {
+    "path": "rich/table.py",
+    "module": "rich.table",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/table.py",
+    "name": "rich.table.Table.add_row",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3535",
+  "files": [
+   {
+    "path": "rich/cells.py",
+    "module": "rich.cells",
+    "new": false
+   },
+   {
+    "path": "rich/segment.py",
+    "module": "rich.segment",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/segment.py",
+    "name": "rich.segment.Segment.split_cells",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3521",
+  "files": [
+   {
+    "path": "rich/segment.py",
+    "module": "rich.segment",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/segment.py",
+    "name": "rich.segment.Segment._split_cells",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3506",
+  "files": [
+   {
+    "path": "rich/segment.py",
+    "module": "rich.segment",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/segment.py",
+    "name": "rich.segment.Segment._split_cells",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3480",
+  "files": [
+   {
+    "path": "rich/text.py",
+    "module": "rich.text",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/text.py",
+    "name": "rich.text.Text.append",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/text.py",
+    "name": "rich.text.Text.append_text",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3472",
+  "files": [
+   {
+    "path": "rich/pretty.py",
+    "module": "rich.pretty",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/pretty.py",
+    "name": "rich.pretty._traverse",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3454",
+  "files": [
+   {
+    "path": "rich/highlighter.py",
+    "module": "rich.highlighter",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/highlighter.py",
+    "name": "rich.highlighter.ReprHighlighter",
+    "async": false,
+    "class": true
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3471",
+  "files": [
+   {
+    "path": "rich/text.py",
+    "module": "rich.text",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/text.py",
+    "name": "rich.text.Text.append_tokens",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3470",
+  "files": [
+   {
+    "path": "rich/console.py",
+    "module": "rich.console",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/console.py",
+    "name": "rich.console.Console._write_buffer",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3469",
+  "files": [
+   {
+    "path": "rich/markdown.py",
+    "module": "rich.markdown",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/markdown.py",
+    "name": "rich.markdown.Markdown.__rich_console__",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3052",
+  "files": [
+   {
+    "path": "rich/prompt.py",
+    "module": "rich.prompt",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/prompt.py",
+    "name": "rich.prompt.PromptBase",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "rich/prompt.py",
+    "name": "rich.prompt.PromptBase.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/prompt.py",
+    "name": "rich.prompt.PromptBase.ask",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/prompt.py",
+    "name": "rich.prompt.PromptBase.check_choice",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/prompt.py",
+    "name": "rich.prompt.PromptBase.process_response",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3278",
+  "files": [
+   {
+    "path": "rich/ansi.py",
+    "module": "rich.ansi",
+    "new": false
+   }
+  ],
+  "loci": []
+ },
+ {
+  "instance_id": "rich_2943",
+  "files": [
+   {
+    "path": "rich/style.py",
+    "module": "rich.style",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/style.py",
+    "name": "rich.style.Style.clear_meta_and_links",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_2725",
+  "files": [
+   {
+    "path": "rich/table.py",
+    "module": "rich.table",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/table.py",
+    "name": "rich.table.Table._render",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3105",
+  "files": [
+   {
+    "path": "rich/_export_format.py",
+    "module": "rich._export_format",
+    "new": false
+   }
+  ],
+  "loci": []
+ },
+ {
+  "instance_id": "rich_3130",
+  "files": [
+   {
+    "path": "rich/markdown.py",
+    "module": "rich.markdown",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/markdown.py",
+    "name": "rich.markdown.TableDataElement.create",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/markdown.py",
+    "name": "rich.markdown.TableDataElement.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/markdown.py",
+    "name": "rich.markdown.TableDataElement.on_text",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3043",
+  "files": [
+   {
+    "path": "rich/_export_format.py",
+    "module": "rich._export_format",
+    "new": false
+   }
+  ],
+  "loci": []
+ },
+ {
+  "instance_id": "rich_3067",
+  "files": [
+   {
+    "path": "rich/highlighter.py",
+    "module": "rich.highlighter",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/highlighter.py",
+    "name": "rich.highlighter.ReprHighlighter",
+    "async": false,
+    "class": true
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3006",
+  "files": [
+   {
+    "path": "rich/repr.py",
+    "module": "rich.repr",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/repr.py",
+    "name": "rich.repr.auto_rich_repr",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3064",
+  "files": [
+   {
+    "path": "rich/markdown.py",
+    "module": "rich.markdown",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/markdown.py",
+    "name": "rich.markdown.TableElement.__rich_console__",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3063",
+  "files": [
+   {
+    "path": "rich/markup.py",
+    "module": "rich.markup",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/markup.py",
+    "name": "rich.markup.escape",
+    "async": false,
+    "class": false
+   }
+  ]
+ },
+ {
+  "instance_id": "rich_3061",
+  "files": [
+   {
+    "path": "rich/text.py",
+    "module": "rich.text",
+    "new": false
+   }
+  ],
+  "loci": [
+   {
+    "path": "rich/text.py",
+    "name": "rich.text.Text",
+    "async": false,
+    "class": true
+   },
+   {
+    "path": "rich/text.py",
+    "name": "rich.text.Text.__init__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/text.py",
+    "name": "rich.text.Text.from_ansi",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/text.py",
+    "name": "rich.text.Text.assemble",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/text.py",
+    "name": "rich.text.Text.__rich_console__",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/text.py",
+    "name": "rich.text.Text.expand_tabs",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/text.py",
+    "name": "rich.text.Text.append",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/text.py",
+    "name": "rich.text.Text.append_text",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/text.py",
+    "name": "rich.text.Text.append_tokens",
+    "async": false,
+    "class": false
+   },
+   {
+    "path": "rich/text.py",
+    "name": "rich.text.Text.divide",
+    "async": false,
+    "class": false
+   }
+  ]
+ }
+]

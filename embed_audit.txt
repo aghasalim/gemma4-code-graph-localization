@@ -1,0 +1,2 @@
+vectors 367985, sharing an identical vector with another node 80709 (21.9%)
+nodes 367985, text ending in a bare None body 49193 (13.4%)
