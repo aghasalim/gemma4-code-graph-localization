@@ -20,7 +20,7 @@ How often an edited file is among the first five files each method returns (95% 
 
 The embedding tool only accepts symbol names, and for 57 of the 129 issues no name in the text matches a graph node, so it returns nothing. On the tasks where a name does match, it is roughly level with BM25.
 
-The audit of the released data found three more things. Only 67 of 49,126 async function definitions across the 127 snapshots are graph nodes, 21.9% of node vectors are exact copies of another node's vector, and every edge is a `calls` edge even though the harness documents other types.
+The audit of the released data found three more things. The graph contains no async function at all (the 67 name matches among 49,126 async definitions are all sync definitions with the same name), 21.9% of node vectors are exact copies of another node's vector, and every edge is a `calls` edge even though the harness documents other types.
 
 ## Running it
 
@@ -33,6 +33,7 @@ python gold.py        # which symbols each reference patch edits -> gold.json
 python retrieve.py    # the four methods on every task -> results.jsonl
 python audit.py       # what the graphs contain -> audit.json
 python embed_audit.py # duplicate vectors and stub node texts
+python audit_extra.py # test-code share, async name matches, shared names
 python stats.py       # the tables with bootstrap intervals
 python check_paper.py # every number in PAPER.md, recomputed
 ```

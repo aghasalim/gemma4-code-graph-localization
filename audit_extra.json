@@ -1,0 +1,33 @@
+{
+ "total": {
+  "nodes": 367985,
+  "test_nodes": 223327,
+  "shared_names": 2228,
+  "async_hits": 67,
+  "async_hits_with_sync_twin": 67
+ },
+ "by_repo": {
+  "fastapi": {
+   "nodes": 265825,
+   "test_nodes": 179288,
+   "shared_names": 1020,
+   "async_hits": 67,
+   "async_hits_with_sync_twin": 67
+  },
+  "httpx": {
+   "nodes": 740,
+   "test_nodes": 144,
+   "shared_names": 0
+  },
+  "requests": {
+   "nodes": 8822,
+   "test_nodes": 5340,
+   "shared_names": 80
+  },
+  "rich": {
+   "nodes": 92598,
+   "test_nodes": 38555,
+   "shared_names": 1128
+  }
+ }
+}

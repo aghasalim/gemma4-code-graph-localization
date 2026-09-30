@@ -51,6 +51,14 @@ def expected():
     want.append(f"{sum(not g['loci'] for g in gold)} tasks edit no existing symbol".capitalize().replace("8", "Eight"))
     for kind in ("sync", "async", "class"):
         want.append(f"{audit[kind + '_in_graph']:,} of {audit[kind + '_total']:,}")
+    extra = json.load(open(HERE / "audit_extra.json"))
+    tot, rep = extra["total"], extra["by_repo"]
+    want.append(f"{tot['test_nodes']:,} of the {tot['nodes']:,} nodes")
+    for r in ("httpx", "fastapi"):
+        want.append(f"{rep[r]['test_nodes']:,} of {rep[r]['nodes']:,} in {'httpx' if r == 'httpx' else 'FastAPI'}")
+    assert tot["async_hits"] == tot["async_hits_with_sync_twin"]
+    want.append(f"All {tot['async_hits']} of those hits share")
+    want.append(f"{tot['shared_names']:,} definitions share")
     embed = (HERE / "embed_audit.txt").read_text()
     for n in re.findall(r"\d+(?:\.\d+)?%?", embed):
         if len(n) > 3:
