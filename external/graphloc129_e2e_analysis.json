@@ -1,0 +1,362 @@
+{
+ "taxonomy": {
+  "base": {
+   "n": 318,
+   "resolved": 92,
+   "categories": {
+    "gold_file | only other tests fail": 2,
+    "gold_file | other": 2,
+    "gold_file | resolved": 5,
+    "gold_file | target tests fail": 11,
+    "gold_function | only other tests fail": 13,
+    "gold_function | other": 5,
+    "gold_function | resolved": 82,
+    "gold_function | target tests fail": 43,
+    "no_patch | error": 14,
+    "no_patch | resolved": 1,
+    "no_patch | stopped without a patch": 2,
+    "no_patch | time budget": 47,
+    "no_patch | tool budget": 3,
+    "wrong_file | only other tests fail": 1,
+    "wrong_file | other": 4,
+    "wrong_file | resolved": 4,
+    "wrong_file | target tests fail": 79
+   },
+   "by_location": {
+    "gold_file": {
+     "n": 20,
+     "resolved": 5
+    },
+    "gold_function": {
+     "n": 143,
+     "resolved": 82
+    },
+    "no_patch": {
+     "n": 67,
+     "resolved": 1
+    },
+    "wrong_file": {
+     "n": 88,
+     "resolved": 4
+    }
+   },
+   "failure_if_gold_function": {
+    "target tests fail": 43,
+    "only other tests fail": 13,
+    "other": 5
+   },
+   "no_patch_reasons": {
+    "time budget": 47,
+    "error": 14,
+    "stopped without a patch": 2,
+    "resolved": 1,
+    "tool budget": 3
+   },
+   "ran_tests": 0.16666666666666666,
+   "resolved_if_ran_tests": 0.2830188679245283,
+   "resolved_if_no_tests": 0.29056603773584905,
+   "edits_tests": 0.1540880503144654,
+   "tool_budget_hit": 0.1289308176100629,
+   "mean_minutes": 18.804905660377354
+  },
+  "skill": {
+   "n": 318,
+   "resolved": 95,
+   "categories": {
+    "gold_file | only other tests fail": 3,
+    "gold_file | other": 1,
+    "gold_file | resolved": 10,
+    "gold_file | target tests fail": 2,
+    "gold_file | tests could not run": 1,
+    "gold_function | only other tests fail": 18,
+    "gold_function | other": 3,
+    "gold_function | patch did not apply": 1,
+    "gold_function | resolved": 81,
+    "gold_function | target tests fail": 40,
+    "gold_function | tests could not run": 1,
+    "no_patch | error": 11,
+    "no_patch | resolved": 1,
+    "no_patch | stopped without a patch": 1,
+    "no_patch | time budget": 45,
+    "no_patch | tool budget": 4,
+    "wrong_file | only other tests fail": 4,
+    "wrong_file | other": 4,
+    "wrong_file | resolved": 3,
+    "wrong_file | target tests fail": 84
+   },
+   "by_location": {
+    "gold_file": {
+     "n": 17,
+     "resolved": 10
+    },
+    "gold_function": {
+     "n": 144,
+     "resolved": 81
+    },
+    "no_patch": {
+     "n": 62,
+     "resolved": 1
+    },
+    "wrong_file": {
+     "n": 95,
+     "resolved": 3
+    }
+   },
+   "failure_if_gold_function": {
+    "only other tests fail": 18,
+    "target tests fail": 40,
+    "patch did not apply": 1,
+    "other": 3,
+    "tests could not run": 1
+   },
+   "no_patch_reasons": {
+    "error": 11,
+    "time budget": 45,
+    "tool budget": 4,
+    "stopped without a patch": 1,
+    "resolved": 1
+   },
+   "ran_tests": 0.1320754716981132,
+   "resolved_if_ran_tests": 0.47619047619047616,
+   "resolved_if_no_tests": 0.2717391304347826,
+   "edits_tests": 0.16666666666666666,
+   "tool_budget_hit": 0.09119496855345911,
+   "mean_minutes": 19.897389937106915,
+   "skill_list_n": 241,
+   "skill_top15_has_gold": 0.6763485477178424,
+   "skill_top5_has_gold": 0.5062240663900415,
+   "gold_function_if_list_has_gold": 0.5337423312883436,
+   "gold_function_if_list_misses": 0.24358974358974358,
+   "edits_a_listed_candidate": 0.38461538461538464
+  }
+ },
+ "variance": {
+  "runs": [
+   "run1",
+   "run2",
+   "run3"
+  ],
+  "n_tasks": 106,
+  "resolved": {
+   "base": {
+    "run1": 31,
+    "run2": 28,
+    "run3": 33
+   },
+   "skill": {
+    "run1": 30,
+    "run2": 30,
+    "run3": 35
+   }
+  },
+  "pairwise": {
+   "run1:base vs run1:skill": {
+    "both": 23,
+    "only_first": 8,
+    "only_second": 7,
+    "diff_points": -0.9
+   },
+   "run1:base vs run2:base": {
+    "both": 24,
+    "only_first": 7,
+    "only_second": 4,
+    "diff_points": -2.8
+   },
+   "run1:base vs run2:skill": {
+    "both": 22,
+    "only_first": 9,
+    "only_second": 8,
+    "diff_points": -0.9
+   },
+   "run1:base vs run3:base": {
+    "both": 26,
+    "only_first": 5,
+    "only_second": 7,
+    "diff_points": 1.9
+   },
+   "run1:base vs run3:skill": {
+    "both": 25,
+    "only_first": 6,
+    "only_second": 10,
+    "diff_points": 3.8
+   },
+   "run1:skill vs run2:base": {
+    "both": 22,
+    "only_first": 8,
+    "only_second": 6,
+    "diff_points": -1.9
+   },
+   "run1:skill vs run2:skill": {
+    "both": 25,
+    "only_first": 5,
+    "only_second": 5,
+    "diff_points": 0.0
+   },
+   "run1:skill vs run3:base": {
+    "both": 23,
+    "only_first": 7,
+    "only_second": 10,
+    "diff_points": 2.8
+   },
+   "run1:skill vs run3:skill": {
+    "both": 27,
+    "only_first": 3,
+    "only_second": 8,
+    "diff_points": 4.7
+   },
+   "run2:base vs run2:skill": {
+    "both": 20,
+    "only_first": 8,
+    "only_second": 10,
+    "diff_points": 1.9
+   },
+   "run2:base vs run3:base": {
+    "both": 22,
+    "only_first": 6,
+    "only_second": 11,
+    "diff_points": 4.7
+   },
+   "run2:base vs run3:skill": {
+    "both": 24,
+    "only_first": 4,
+    "only_second": 11,
+    "diff_points": 6.6
+   },
+   "run2:skill vs run3:base": {
+    "both": 24,
+    "only_first": 6,
+    "only_second": 9,
+    "diff_points": 2.8
+   },
+   "run2:skill vs run3:skill": {
+    "both": 26,
+    "only_first": 4,
+    "only_second": 9,
+    "diff_points": 4.7
+   },
+   "run3:base vs run3:skill": {
+    "both": 25,
+    "only_first": 8,
+    "only_second": 10,
+    "diff_points": 1.9
+   }
+  },
+  "base": {
+   "always": 22,
+   "sometimes": 20,
+   "never": 64,
+   "rate_per_run": [
+    0.292,
+    0.264,
+    0.311
+   ],
+   "sd_one_run_points": 2.44,
+   "sd_between_two_runs_points": 3.44,
+   "resolved_if_gold_function": [
+    82,
+    143
+   ],
+   "resolved_if_no_gold_function": [
+    10,
+    175
+   ],
+   "resolved_if_no_gold_function_on_function_tasks": [
+    6,
+    157
+   ]
+  },
+  "skill": {
+   "always": 24,
+   "sometimes": 17,
+   "never": 65,
+   "rate_per_run": [
+    0.283,
+    0.283,
+    0.33
+   ],
+   "sd_one_run_points": 2.25,
+   "sd_between_two_runs_points": 3.18,
+   "resolved_if_gold_function": [
+    81,
+    144
+   ],
+   "resolved_if_no_gold_function": [
+    14,
+    174
+   ],
+   "resolved_if_no_gold_function_on_function_tasks": [
+    7,
+    156
+   ]
+  },
+  "pooled_sd_between_two_runs_points": 3.6,
+  "skill_minus_base_all_runs": [
+   0.9,
+   -4.1,
+   6.3
+  ],
+  "pooled": {
+   "resolved": {
+    "base": 0.289,
+    "skill": 0.299,
+    "skill_minus_base": [
+     0.9,
+     -4.1,
+     6.3
+    ],
+    "per_run_skill_minus_base": [
+     -0.9,
+     1.9,
+     1.9
+    ]
+   },
+   "patch": {
+    "base": 0.789,
+    "skill": 0.805,
+    "skill_minus_base": [
+     1.6,
+     -3.5,
+     6.6
+    ],
+    "per_run_skill_minus_base": [
+     5.7,
+     -0.9,
+     0.0
+    ]
+   },
+   "edits_gold_file": {
+    "base": 0.513,
+    "skill": 0.506,
+    "skill_minus_base": [
+     -0.6,
+     -6.6,
+     5.0
+    ],
+    "per_run_skill_minus_base": [
+     1.9,
+     -4.7,
+     0.9
+    ]
+   },
+   "edits_gold_function": {
+    "base": 0.45,
+    "skill": 0.453,
+    "skill_minus_base": [
+     0.3,
+     -5.0,
+     5.7
+    ],
+    "per_run_skill_minus_base": [
+     -0.9,
+     -0.9,
+     2.8
+    ]
+   }
+  }
+ },
+ "budget": {
+  "max_tool_calls": 40,
+  "max_time_minutes": 25,
+  "max_turns": 60
+ }
+}

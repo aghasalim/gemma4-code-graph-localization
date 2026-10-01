@@ -6,27 +6,27 @@ Aghasalim Mustafazada, Howest University of Applied Sciences, Kortrijk
 
 ## Abstract
 
-The Gemma 4 Developer Agent competition gives every agent three code intelligence tools built on a released call graph and node embeddings for each repository snapshot. Before spending tool calls on them, it is worth knowing how often they point at the code a fix actually has to change. I measure that directly on all 129 training tasks, with no model in the loop. For each task I recover the functions and classes the reference patch edits from the upstream repository at the task's base commit, then ask four search methods to rank graph nodes using only the issue text. My reimplementation of the harness's `search_similar_code` puts an edited file in its top five for 0.29 of tasks (95% bootstrap interval 0.21 to 0.37). Plain grep over the issue's identifiers reaches 0.41, and BM25 over the node names and code in the same graph reaches 0.48, rising to 0.64 once test code is filtered out. Most of the gap comes from the lookup step: for 57 of 129 issues, no name in the text resolves to a graph node, so the tool has nowhere to start. On the tasks where a name does resolve, the difference between BM25 and the embedding tool is not significant. An audit of the released data explains some of the rest: the graph contains no async function at all (the 67 matches among 49,126 async definitions are all sync definitions with the same name), 21.9% of node vectors are exact duplicates of another node's vector, and every edge is a `calls` edge. All code, the per-task results and the recovered edit locations are public, and every number here is recomputed by a script.
+The Gemma 4 Developer Agent competition gives every agent three code intelligence tools built on a released call graph and node embeddings for each repository snapshot. Before spending tool calls on them, it is worth knowing how often they point at the code a fix actually has to change. I measure that directly on all 129 training tasks, with no model in the loop. For each task I recover the functions and classes the reference patch edits from the upstream repository at the task's base commit, then ask four search methods to rank graph nodes using only the issue text. My reimplementation of the harness's `search_similar_code` puts an edited file in its top five for 0.29 of tasks (95% bootstrap interval 0.21 to 0.37). Plain grep over the issue's identifiers reaches 0.41, and BM25 over the node names and code in the same graph reaches 0.48, rising to 0.64 once test code is filtered out. Most of the gap comes from the lookup step: for 57 of 129 issues, no name in the text resolves to a graph node, so the tool has nowhere to start. On the tasks where a name does resolve, the difference between BM25 and the embedding tool is not significant. An audit of the released data explains some of the rest: the graph contains no async function at all (the 67 matches among 49,126 async definitions are all sync definitions with the same name), 21.9% of node vectors are exact duplicates of another node's vector, and every edge is a `calls` edge. All code, the per-task results and the recovered edit locations are public, and every number from my own measurements is recomputed by a script. A concurrent resource, GraphLoc-129, studies the same tasks at function level and with end-to-end agent runs; section 7 sets out how the two differ.
 
 ## 1. Introduction
 
-Fault localisation is the first thing a coding agent has to get right. If it edits the wrong file, nothing after that matters, and the Gemma 4 agent runs under a tight budget: every hidden task must finish within one 12 hour run on a quantised 31B model, which leaves a few minutes and a few dozen tool calls per task. Every call spent on a search that points the wrong way is expensive.
+Fault localisation is the first thing a coding agent has to get right. If it edits the wrong file, nothing after that matters, and the Gemma 4 agent runs under a tight budget: every hidden task must finish within one 12 hour run on a quantised 31B model, which leaves a few minutes and a few dozen tool calls per task.
 
-The competition ships a resource aimed at exactly this problem: a call graph and a 256 dimensional embedding for every function and class in each repository snapshot, exposed through three tools (`search_similar_code`, `get_code_neighbors`, `get_code_subgraph`). The harness documentation recommends them for "fast, targeted navigation". What is missing is a number. How often does the graph lead to the right place?
+The competition ships a call graph and a 256 dimensional embedding for every function and class in each repository snapshot, exposed through three tools (`search_similar_code`, `get_code_neighbors`, `get_code_subgraph`). The harness documentation recommends them for "fast, targeted navigation". How often does it lead to the right place?
 
-This paper answers that on the 129 released training tasks. It does not need Gemma or a GPU: the question is about the search tools, so I hold the agent fixed at "reads the issue and searches" and measure the searches. That makes the result cheap to reproduce and independent of prompt engineering.
+This paper answers that on the 129 released training tasks. It does not need Gemma or a GPU: the question is about the search tools, so I hold the agent fixed at "reads the issue and searches" and measure the searches.
 
 The contributions are:
 
-1. A localisation benchmark built from the competition data: for each training task, the files and symbols the reference patch edits, recovered by parsing the upstream source at the base commit. Symbol names follow the graph's own naming convention, so they can be looked up directly.
-2. A comparison of four search methods under the same query, with bootstrap intervals and paired differences.
-3. An audit of the released graphs and embeddings that explains part of the result and that other competitors can use.
+1. File and symbol level edit locations for every training task, named the way the graph names them.
+2. Four search methods compared under one query, with bootstrap intervals and paired differences.
+3. An audit of the released graphs and embeddings.
 
 ## 2. Setup
 
 ### 2.1 Data
 
-The competition releases 129 training tasks from four repositories: 67 from FastAPI, 48 from Rich, 13 from Requests and 1 from httpx. Each task has an issue text, the base commit, the reference patch and the test patch. The tasks cover 127 distinct base commits, and there is one graph file and one embedding file per commit. All 127 of each downloaded non-empty on 30 September 2026, so an earlier report of empty files on the competition forum does not reproduce.
+The competition releases 129 training tasks from four repositories: 67 from FastAPI, 48 from Rich, 13 from Requests and 1 from httpx. The tasks cover 127 distinct base commits, and there is one graph file and one embedding file per commit.
 
 A graph file is a NetworkX node-link dump. Nodes carry a dotted name (for example `fastapi.routing.get_request_handler`) and the source text; edges carry a type. The embedding file maps the same names to 256 dimensional float32 vectors.
 
@@ -112,9 +112,7 @@ On this subset the embedding tool has the best hit@1, and the BM25 advantage at 
 
 ## 4. Audit of the released graphs and embeddings
 
-The audit parses every non-test Python file at each of the 127 base commits and checks which functions and classes appear as nodes.
-
-Counts are summed over the 127 snapshots, so a function that exists in 60 FastAPI snapshots counts 60 times. Test directories are excluded.
+The audit parses every non-test Python file at each of the 127 base commits and checks which functions and classes appear as nodes. Counts are summed over snapshots, so a function in 60 FastAPI snapshots counts 60 times.
 
 | repository | sync functions in graph | async functions in graph | classes in graph |
 |---|---|---|---|
@@ -132,7 +130,7 @@ Duplicate vectors. Across all 127 embedding files, 80,709 of 367,985 vectors (21
 
 Only call edges. The harness documentation names `CALLS`, `DEFINED_IN` and `IMPORTS` as edge types for `get_code_neighbors`. Every edge in every released graph is a `calls` edge, so filtering by the other types returns nothing.
 
-Nested functions collide. The graph lifts a function defined inside another function to module level, so the inner `wrapper` of `_wrap_gen_lifespan_context` appears as `fastapi.routing.wrapper`. Across the 127 snapshots, 2,228 definitions share their qualified name with another definition in the same file, and the graph can store each such name only once.
+Nested functions collide. The graph lifts a nested function to module level, so the inner `wrapper` of `_wrap_gen_lifespan_context` becomes `fastapi.routing.wrapper`. Across the 127 snapshots, 2,228 definitions share their qualified name with another definition in the same file, and the graph can store each such name only once.
 
 ## 5. What this means for an agent
 
@@ -144,15 +142,15 @@ Second, exclude test code from every search. It is the largest and cheapest gain
 
 Third, use the embedding tool only after a name has been found, for example to list functions similar to one the agent has already read. On the tasks where it has a starting point, it is competitive.
 
-I have not yet shown that these changes raise the leaderboard score. Localisation is necessary but not sufficient: an agent that finds the right file can still write the wrong fix. Testing that needs full agent runs, which is the next step.
+Localisation is necessary but not sufficient, because an agent that finds the right file can still write the wrong fix. In GraphLoc-129's end-to-end runs on the same tasks, adding a BM25 localisation skill to an agent changed resolved runs from 92 to 95 of 318, a gap smaller than the spread between repeated runs of the same agent. Better search on its own should not be expected to move the leaderboard much.
 
 ## 6. Limitations
 
-The benchmark has 129 tasks from four repositories, and 67 of them come from one project, so the intervals are wide and the results may not carry over to repositories with different naming habits. The ground truth is the reference patch, but other correct fixes might edit different code; a method penalised here might still lead to a passing fix. Symbol names are derived from the upstream repository, not the competition snapshots, which are built from the same commits with `git fast-export`. The embed and graph methods are my reimplementation from the harness documentation, not the harness code, so the real tools may rank differently. The identifier extraction is a set of regular expressions, not a model, and a better extractor would change the embed and graph rows. BM25 is scored over the graph's node text, so it inherits the missing async functions; a BM25 over raw files could do better still.
+The benchmark has 129 tasks from four repositories, and 67 of them come from one project, so the intervals are wide and the results may not carry over to repositories with different naming habits. The ground truth is the reference patch, but other correct fixes might edit different code; a method penalised here might still lead to a passing fix. The embed and graph methods are my reimplementation from the harness documentation, not the harness code, so the real tools may rank differently. The identifier extraction is a set of regular expressions, not a model, and a better extractor would change the embed and graph rows. BM25 is scored over the graph's node text, so it inherits the missing async functions; a BM25 over raw files could do better still.
 
 ## 7. Related work
 
-SWE-bench (Jimenez et al., 2024) established repository-level issue resolution as a benchmark, and the competition scores patches the same way, by running the task's tests on the patched repository. Agentless (Xia et al., 2024) showed that a fixed localise, repair and validate pipeline is competitive with free-form agents, with localisation as its first stage. SWE-agent (Yang et al., 2024) argued that the design of the agent's tools matters as much as the model, which is the premise of this paper. Graph-based localisation has been studied in RepoGraph (Ouyang et al., 2025) and LocAgent (Chen et al., 2025), which build richer graphs than the call-only graphs released here. BM25 (Robertson and Zaragoza, 2009) remains a strong baseline for code retrieval, as it was in the original SWE-bench retrieval setting. Bootstrap intervals follow Efron and Tibshirani (1993).
+SWE-bench (Jimenez et al., 2024) established repository-level issue resolution as a benchmark, and the competition scores patches the same way, by running the task's tests on the patched repository. Agentless (Xia et al., 2024) showed that a fixed localise, repair and validate pipeline is competitive with free-form agents, with localisation as its first stage. SWE-agent (Yang et al., 2024) argued that the design of the agent's tools matters as much as the model, which is the premise of this paper. Graph-based localisation has been studied in RepoGraph (Ouyang et al., 2025) and LocAgent (Chen et al., 2025), which build richer graphs than the call-only graphs released here. Concurrently, GraphLoc-129 (zzgtylors, 2026), the companion resource of another paper-track writeup, labels the same 129 tasks at function level, rebuilds the graph with containment and import edges, and runs agents end to end; it also notes that the released tools know no async function. This paper overlaps with it on that finding and on lexical search beating the graph. What it adds, as far as the released GraphLoc files show, is a measurement of the competition's own lookup step (57 of 129 issues resolve to no node), file-level paired intervals against grep, and the audits of duplicate vectors, call-only edges and shared names. BM25 (Robertson and Zaragoza, 2009) remains a strong baseline for code retrieval, as it was in the original SWE-bench retrieval setting. Bootstrap intervals follow Efron and Tibshirani (1993).
 
 ## 8. Reproducing this
 
@@ -163,6 +161,8 @@ Code: https://github.com/aghasalim/gemma4-code-graph-localization
 ## References
 
 Chen, Z. et al. (2025). LocAgent: Graph-Guided LLM Agents for Code Localization. ACL 2025.
+
+zzgtylors (2026). GraphLoc-129: localization labels and agent runs. Kaggle dataset, companion to the paper-track writeup "Where Does the Graph Help? A Localization Audit of Gemma 4 Agent Code Graphs". https://www.kaggle.com/datasets/zzgtylors/graphloc-129-localization-labels-and-agent-runs
 
 Efron, B. and Tibshirani, R. (1993). An Introduction to the Bootstrap. Chapman and Hall.
 

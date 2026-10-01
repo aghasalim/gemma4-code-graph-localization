@@ -59,6 +59,9 @@ def expected():
     assert tot["async_hits"] == tot["async_hits_with_sync_twin"]
     want.append(f"All {tot['async_hits']} of those hits share")
     want.append(f"{tot['shared_names']:,} definitions share")
+    gl = json.load(open(HERE / "external" / "graphloc129_e2e_analysis.json"))
+    base, skill = (sum(gl["variance"]["resolved"][a].values()) for a in ("base", "skill"))
+    want.append(f"from {base} to {skill} of {gl['taxonomy']['base']['n']}")
     embed = (HERE / "embed_audit.txt").read_text()
     for n in re.findall(r"\d+(?:\.\d+)?%?", embed):
         if len(n) > 3:
