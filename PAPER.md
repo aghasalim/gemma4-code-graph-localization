@@ -162,8 +162,6 @@ Code: https://github.com/aghasalim/gemma4-code-graph-localization
 
 Chen, Z. et al. (2025). LocAgent: Graph-Guided LLM Agents for Code Localization. ACL 2025.
 
-zzgtylors (2026). GraphLoc-129: localization labels and agent runs. Kaggle dataset, companion to the paper-track writeup "Where Does the Graph Help? A Localization Audit of Gemma 4 Agent Code Graphs". https://www.kaggle.com/datasets/zzgtylors/graphloc-129-localization-labels-and-agent-runs
-
 Efron, B. and Tibshirani, R. (1993). An Introduction to the Bootstrap. Chapman and Hall.
 
 Jimenez, C. E. et al. (2024). SWE-bench: Can Language Models Resolve Real-World GitHub Issues? ICLR 2024.
@@ -175,3 +173,5 @@ Robertson, S. and Zaragoza, H. (2009). The Probabilistic Relevance Framework: BM
 Xia, C. S. et al. (2024). Agentless: Demystifying LLM-based Software Engineering Agents. arXiv:2407.01489.
 
 Yang, J. et al. (2024). SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering. NeurIPS 2024.
+
+zzgtylors (2026). GraphLoc-129: localization labels and agent runs. Kaggle dataset, companion to the paper-track writeup "Where Does the Graph Help? A Localization Audit of Gemma 4 Agent Code Graphs". https://www.kaggle.com/datasets/zzgtylors/graphloc-129-localization-labels-and-agent-runs
