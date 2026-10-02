@@ -9,6 +9,7 @@ B = 10_000
 
 
 def boot(values, seed=0):
+    """Percentile bootstrap of the mean. Returns (mean, lo, hi) for a 95% interval."""
     rng = random.Random(seed)
     n = len(values)
     means = sorted(sum(rng.choices(values, k=n)) / n for _ in range(B))
