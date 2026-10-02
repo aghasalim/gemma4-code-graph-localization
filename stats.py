@@ -16,7 +16,7 @@ def boot(values, seed=0):
 
 
 def table(rows, level, ks=(1, 5, 10)):
-    lines = [f"| method | " + " | ".join(f"@{k}" for k in ks) + " | n |", "|" + "---|" * (len(ks) + 2)]
+    lines = ["| method | " + " | ".join(f"@{k}" for k in ks) + " | n |", "|" + "---|" * (len(ks) + 2)]
     for m in METHODS:
         cells, n = [], 0
         for k in ks:
