@@ -6,7 +6,7 @@ Aghasalim Mustafazada, Howest University of Applied Sciences, Kortrijk
 
 ## Abstract
 
-The Gemma 4 Developer Agent competition gives every agent three code intelligence tools built on a released call graph and node embeddings for each repository snapshot. Before spending tool calls on them, it is worth knowing how often they point at the code a fix actually has to change. I measure that directly on all 129 training tasks, with no model in the loop. For each task I recover the functions and classes the reference patch edits from the upstream repository at the task's base commit, then ask four search methods to rank graph nodes using only the issue text. My reimplementation of the harness's `search_similar_code` puts an edited file in its top five for 0.29 of tasks (95% bootstrap interval 0.21 to 0.37). Plain grep over the issue's identifiers reaches 0.41, and BM25 over the node names and code in the same graph reaches 0.48, rising to 0.64 once test code is filtered out. Most of the gap comes from the lookup step: for 57 of 129 issues, no name in the text resolves to a graph node, so the tool has nowhere to start. On the tasks where a name does resolve, the difference between BM25 and the embedding tool is not significant. An audit of the released data explains some of the rest: the graph contains no async function at all (the 67 matches among 49,126 async definitions are all sync definitions with the same name), 21.9% of node vectors are exact duplicates of another node's vector, and every edge is a `calls` edge. All code, the per-task results and the recovered edit locations are public, and every number from my own measurements is recomputed by a script. A concurrent resource, GraphLoc-129, studies the same tasks at function level and with end-to-end agent runs; section 7 sets out how the two differ.
+The Gemma 4 Developer Agent competition gives every agent three code intelligence tools built on a released call graph and node embeddings for each repository snapshot. Before spending tool calls on them, it is worth knowing how often they point at the code a fix actually has to change. I measure that directly on all 129 training tasks, with no model in the loop. For each task I recover the functions and classes the reference patch edits from the upstream repository at the task's base commit, then ask four search methods to rank graph nodes using only the issue text. My reimplementation of the harness's `search_similar_code` puts an edited file in its top five for 0.29 of tasks (95% bootstrap interval 0.21 to 0.37). Plain grep over the issue's identifiers reaches 0.41, and BM25 over the node names and code in the same graph reaches 0.48, rising to 0.64 once test code is filtered out. Most of the gap comes from the lookup step: for 57 of 129 issues, no name in the text resolves to a graph node, so the tool has nowhere to start. On the tasks where a name does resolve, the difference between BM25 and the embedding tool is not significant. An audit of the released data explains some of the rest: the graph contains no async function at all (the 67 matches among 49,126 async definitions are all sync definitions with the same name), 21.9% of node vectors are exact duplicates of another node's vector, and every edge is a `calls` edge. All code, the per-task results and the recovered edit locations are public, and every number from my own measurements is recomputed by a script. End-to-end, two runs of one agent on 30 tasks differed on 8 of them, more than any search change moved the count.
 
 ## 1. Introduction
 
@@ -14,7 +14,7 @@ Fault localisation is the first thing a coding agent has to get right. If it edi
 
 The competition ships a call graph and a 256 dimensional embedding for every function and class in each repository snapshot, exposed through three tools (`search_similar_code`, `get_code_neighbors`, `get_code_subgraph`). The harness documentation recommends them for "fast, targeted navigation". How often does it lead to the right place?
 
-This paper answers that on the 129 released training tasks. It does not need Gemma or a GPU: the question is about the search tools, so I hold the agent fixed at "reads the issue and searches" and measure the searches.
+This paper answers that on the 129 released training tasks, without Gemma or a GPU: I hold the agent fixed at "reads the issue and searches" and measure the searches.
 
 The contributions are:
 
@@ -91,11 +91,11 @@ Removing test code is the largest single effect in the table. It lifts BM25 at f
 
 n = 121 tasks. grep does not rank symbols and is left out.
 
-Finding the exact function is much harder than finding the file for every method. Even the best row puts an edited symbol in the top five for under a third of tasks, which suggests an agent should use search to pick a file and then read it, not trust a search hit as the place to edit.
+Finding the exact function is much harder than finding the file. Even the best row puts an edited symbol in the top five for under a third of tasks, so an agent should use search to pick a file and then read it.
 
 ### 3.3 Where the embedding tool loses
 
-For 57 of the 129 issues, no identifier in the text resolves to any graph node, so the embedding and graph methods return nothing at all. In 8 of those 57 the extractor finds no identifier in the issue at all; in the other 49 the issue does name something, but no name matches a node, either because the issue names a concept and not a symbol, or because the symbol is one the graph does not contain (section 4).
+For 57 of the 129 issues, no identifier in the text resolves to any graph node, so the embedding and graph methods return nothing. In 8 of those the extractor finds no identifier; in the other 49 the issue names a concept rather than a symbol, or a symbol the graph does not contain (section 4).
 
 Restricting to the 71 file-level tasks where at least one name resolves changes the picture:
 
@@ -122,11 +122,11 @@ The audit parses every non-test Python file at each of the 127 base commits and 
 | httpx | 521 of 521 | 0 of 100 | 75 of 75 |
 | all | 97,675 of 98,147 | 67 of 49,126 | 46,897 of 48,395 |
 
-Sync functions and classes are almost all present, which confirms that the derived names match the graph's convention. The remaining misses are all in FastAPI and I have not traced them; nested classes and repeated names in the tutorial files are the likely cause.
+Sync functions and classes are almost all present, which confirms the derived names match the graph's convention. The few misses are all in FastAPI and untraced.
 
 Async functions are missing. Across all snapshots, 67 of 49,126 async function definitions are graph nodes, against 97,675 of 98,147 sync ones. All 67 of those hits share their qualified name with a sync function or class in the same module, so in effect the graph contains no async function at all. This matters most for FastAPI, where request handling, dependency resolution and the lifespan machinery are `async`. 52 of the 519 symbols the reference patches edit are `async`, so no graph tool can ever return them.
 
-Duplicate vectors. Across all 127 embedding files, 80,709 of 367,985 vectors (21.9%) are exactly equal to another node's vector. 49,193 node texts (13.4%) end in a bare `None` body, which suggests class bodies were stripped before embedding, so two classes with the same signature and base class become indistinguishable. In one FastAPI snapshot, 82 different classes named `Item`, spread across tutorials, test files and example apps, all share a single vector.
+Duplicate vectors. Across all 127 embedding files, 80,709 of 367,985 vectors (21.9%) are exactly equal to another node's vector. 49,193 node texts (13.4%) end in a bare `None` body, which suggests class bodies were stripped before embedding. In one FastAPI snapshot, 82 different classes named `Item`, spread across tutorials, test files and example apps, all share a single vector.
 
 Only call edges. The harness documentation names `CALLS`, `DEFINED_IN` and `IMPORTS` as edge types for `get_code_neighbors`. Every edge in every released graph is a `calls` edge, so filtering by the other types returns nothing.
 
@@ -142,7 +142,7 @@ Second, exclude test code from every search. It is the largest and cheapest gain
 
 Third, use the embedding tool only after a name has been found, for example to list functions similar to one the agent has already read. On the tasks where it has a starting point, it is competitive.
 
-Localisation is necessary but not sufficient, because an agent that finds the right file can still write the wrong fix. In GraphLoc-129's end-to-end runs on the same tasks, adding a BM25 localisation skill to an agent changed resolved runs from 92 to 95 of 318, a gap smaller than the spread between repeated runs of the same agent. Better search on its own should not be expected to move the leaderboard much.
+Localisation is necessary but not sufficient, because an agent that finds the right file can still write the wrong fix, and my own end-to-end runs (`agent_runs.py`) show how hard the next step is to measure. On 30 training tasks, with the competition model on vLLM and the competition harness, one agent run twice with the same settings solved 15 and then 11 tasks, and 8 of the 30 changed outcome. Four prompt and budget variants of another agent solved 16, 13, 15 and 13, and 12 of the 30 tasks were solved by some variants and not others. Adding a BM25 file ranking skill to an agent solved 7 of 12 tasks against 9 of 12 without it. None of these gaps is larger than the spread between repeated runs, and the agent that won locally, 15 against 7, scored lower on the leaderboard, 0.06 against 0.10. GraphLoc-129 finds the same at larger scale: a BM25 skill moved resolved runs from 92 to 95 of 318. A check on 30 tasks cannot tell a gain of a few tasks from noise, so better search alone should not be expected to move it, or the leaderboard, by much.
 
 ## 6. Limitations
 
@@ -150,11 +150,11 @@ The benchmark has 129 tasks from four repositories, and 67 of them come from one
 
 ## 7. Related work
 
-SWE-bench (Jimenez et al., 2024) established repository-level issue resolution as a benchmark, and the competition scores patches the same way, by running the task's tests on the patched repository. Agentless (Xia et al., 2024) showed that a fixed localise, repair and validate pipeline is competitive with free-form agents, with localisation as its first stage. SWE-agent (Yang et al., 2024) argued that the design of the agent's tools matters as much as the model, which is the premise of this paper. Graph-based localisation has been studied in RepoGraph (Ouyang et al., 2025) and LocAgent (Chen et al., 2025), which build richer graphs than the call-only graphs released here. Concurrently, GraphLoc-129 (zzgtylors, 2026), the companion resource of another paper-track writeup, labels the same 129 tasks at function level, rebuilds the graph with containment and import edges, and runs agents end to end; it also notes that the released tools know no async function. This paper overlaps with it on that finding and on lexical search beating the graph. What it adds, as far as the released GraphLoc files show, is a measurement of the competition's own lookup step (57 of 129 issues resolve to no node), file-level paired intervals against grep, and the audits of duplicate vectors, call-only edges and shared names. BM25 (Robertson and Zaragoza, 2009) remains a strong baseline for code retrieval, as it was in the original SWE-bench retrieval setting. Bootstrap intervals follow Efron and Tibshirani (1993).
+SWE-bench (Jimenez et al., 2024) established repository-level issue resolution as a benchmark, and the competition scores patches the same way, by running the task's tests on the patched repository. Agentless (Xia et al., 2024) showed that a fixed localise, repair and validate pipeline is competitive with free-form agents, with localisation as its first stage. SWE-agent (Yang et al., 2024) argued that tool design matters as much as the model. Graph-based localisation has been studied in RepoGraph (Ouyang et al., 2025) and LocAgent (Chen et al., 2025), which build richer graphs than the call-only graphs released here. Concurrently, GraphLoc-129 (zzgtylors, 2026) labels the same 129 tasks at function level, rebuilds the graph with containment and import edges, runs agents end to end, and also notes the missing async functions. This paper adds a measurement of the competition's own lookup step (57 of 129 issues resolve to no node), paired file-level intervals against grep, the duplicate vector, edge and name audits, and repeated end-to-end runs that measure run-to-run noise. BM25 (Robertson and Zaragoza, 2009) remains a strong baseline for code retrieval, as it was in the original SWE-bench retrieval setting. Bootstrap intervals follow Efron and Tibshirani (1993).
 
 ## 8. Reproducing this
 
-Everything runs on a laptop CPU, with no GPU and no model. The competition files are downloaded with the Kaggle API; the upstream repositories are cloned from GitHub at each base commit.
+Everything except the end-to-end runs works on a laptop CPU, with no GPU and no model; those runs are stored per task in `agent_runs/`. The competition files are downloaded with the Kaggle API; the upstream repositories are cloned from GitHub at each base commit.
 
 Code: https://github.com/aghasalim/gemma4-code-graph-localization
 
