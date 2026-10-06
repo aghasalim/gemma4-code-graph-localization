@@ -1,0 +1,13 @@
+{
+  "id": "aghasalimmustafazada/does-the-code-graph-find-the-bug-reproduce",
+  "title": "Does the Code Graph Find the Bug? Reproduce",
+  "code_file": "reproduce.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "competition_sources": ["gemma-4-developer-agent"],
+  "dataset_sources": [],
+  "kernel_sources": []
+}
