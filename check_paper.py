@@ -4,6 +4,7 @@ import re
 import sys
 from pathlib import Path
 
+import agent_runs
 from stats import boot, METHODS
 
 HERE = Path(__file__).resolve().parent
@@ -62,6 +63,15 @@ def expected():
     gl = json.load(open(HERE / "external" / "graphloc129_e2e_analysis.json"))
     base, skill = (sum(gl["variance"]["resolved"][a].values()) for a in ("base", "skill"))
     want.append(f"from {base} to {skill} of {gl['taxonomy']['base']['n']}")
+    ar = agent_runs.figures()
+    n, (r1, r2, flips), v = ar["tasks"], ar["repeat"], ar["variants"]
+    want.append(f"solved {r1} and then {r2} tasks, and {flips} of the {n} changed outcome")
+    want.append(f"solved {', '.join(map(str, v[:-1]))} and {v[-1]}, and {ar['variants_split']} of the {n} tasks")
+    want.append("solved {} of {} tasks against {} of {}".format(ar["bm25_12"][0], ar["bm25_12"][2], ar["bm25_12"][1], ar["bm25_12"][2]))
+    want.append(f"{max(r1, ar['v1_local'])} against {ar['v1_local']}")
+    lb = ar["leaderboard"]
+    want.append(f"{lb['v2']:.2f} against {lb['v1']:.2f}")
+    want.append(f"differed on {flips} of them")
     embed = (HERE / "embed_audit.txt").read_text()
     for n in re.findall(r"\d+(?:\.\d+)?%?", embed):
         if len(n) > 3:

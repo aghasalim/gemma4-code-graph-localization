@@ -48,4 +48,4 @@ CI runs `check_paper.py` on every push. It recomputes each figure in the paper f
 
 ## Files
 
-`gold.py` parses each reference patch and the upstream file at the base commit and names the enclosing function or class the way the graph does. `retrieve.py` holds the four search methods. `audit.py` checks graph coverage by function type. `stats.py` prints the tables. `results.jsonl` has one row per task, so any number can be traced back to the tasks behind it.
+`gold.py` parses each reference patch and the upstream file at the base commit and names the enclosing function or class the way the graph does. `retrieve.py` holds the four search methods. `audit.py` checks graph coverage by function type. `stats.py` prints the tables. `agent_runs.py` reads the per-task results of the end-to-end runs in `agent_runs/` for section 5. `results.jsonl` has one row per task, so any number can be traced back to the tasks behind it.
