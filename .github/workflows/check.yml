@@ -9,3 +9,5 @@ jobs:
         with:
           python-version: "3.12"
       - run: python check_paper.py
+      # stats.py is stdlib only and seeded, so its output must match stats.txt.
+      - run: python stats.py | diff - stats.txt
