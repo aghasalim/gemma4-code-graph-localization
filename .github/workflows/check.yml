@@ -9,3 +9,4 @@ jobs:
         with:
           python-version: "3.12"
       - run: python check_paper.py
+      - run: python stats.py | diff - stats.txt

@@ -2,7 +2,7 @@
 
 The Gemma 4 Developer Agent competition on Kaggle gives every agent three search tools built on a released call graph and node embeddings. I wanted to know how often they point at the code a fix actually has to change, before spending an agent's small tool budget on them.
 
-So I measured it on all 129 training tasks, without running any model. For each task I find the functions and classes the reference patch edits. Then I let four search methods rank the code using only the issue text.
+So I measured it on all 129 training tasks, without running any model. For each task I find the functions and classes the reference patch edits. Then I let four search methods rank the code using only the issue text. I also ran bm25, embed and graph a second time with test files left out; those runs end in `_src`. The table below shows the four methods and bm25_src, and `stats.txt` has all seven.
 
 The paper draft for the competition's paper track is [PAPER.md](PAPER.md).
 
