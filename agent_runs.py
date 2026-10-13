@@ -6,17 +6,28 @@ agent with the same settings; p13 and p13_b1..b3 are four prompt and budget
 variants of one public two-stage agent; v4_bm25_12 adds a BM25 file ranking
 skill to v1 on 12 tasks.
 
-Leaderboard scores are copied from the competition's submissions page.
+agent_runs/leaderboard.csv lists my scored submissions with the notebook
+version each one ran, copied from the competition's submissions page.
 """
+import csv
 import json
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-LEADERBOARD = {"v1": 0.10, "v2": 0.06}
 
 
 def run(name):
     return {(d := json.loads(l))["instance_id"]: bool(d["resolved"]) for l in open(HERE / "agent_runs" / f"{name}.jsonl")}
+
+
+def leaderboard():
+    rows = list(csv.DictReader(open(HERE / "agent_runs" / "leaderboard.csv")))
+    by_version = {}
+    for r in rows:
+        by_version.setdefault(r["kernel_version"], []).append(float(r["public_score"]))
+    first = {r["bundle"]: float(r["public_score"]) for r in reversed(rows)}
+    repeats = {r["bundle"]: by_version[r["kernel_version"]] for r in rows if len(by_version[r["kernel_version"]]) > 1}
+    return {"first": first, "repeats": repeats, "n": len(rows)}
 
 
 def figures():
@@ -32,7 +43,7 @@ def figures():
         "variants_split": split,
         "v1_local": sum(run("v1").values()),
         "bm25_12": [sum(run("v4_bm25_12").values()), sum(run("v1_12").values()), len(run("v1_12"))],
-        "leaderboard": LEADERBOARD,
+        "leaderboard": leaderboard(),
     }
 
 
