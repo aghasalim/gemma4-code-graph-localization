@@ -69,8 +69,13 @@ def expected():
     want.append(f"solved {', '.join(map(str, v[:-1]))} and {v[-1]}, and {ar['variants_split']} of the {n} tasks")
     want.append("solved {} of {} tasks against {} of {}".format(ar["bm25_12"][0], ar["bm25_12"][2], ar["bm25_12"][1], ar["bm25_12"][2]))
     want.append(f"{max(r1, ar['v1_local'])} against {ar['v1_local']}")
-    lb = ar["leaderboard"]
-    want.append(f"{lb['v2']:.2f} against {lb['v1']:.2f}")
+    first, rep = ar["leaderboard"]["first"], ar["leaderboard"]["repeats"]
+    want.append(f"scored {first['v2']:.2f} on the leaderboard against {first['v1']:.2f}")
+    want.append(f"scored {rep['v1'][0]:.2f} and then {rep['v1'][1]:.2f} for v1, and {rep['p13'][0]:.2f} and then {rep['p13'][1]:.2f}")
+    gap, spread = first["v1"] - first["v2"], rep["v1"][0] - rep["v1"][1]
+    assert gap <= spread + 1e-9, "the text says the gap is no larger than v1's rerun"
+    want.append(f"the {gap:.2f} gap between the two agents")
+    want.append(f"has scored {first['c24']:.2f} once")
     want.append(f"differed on {flips} of them")
     embed = (HERE / "embed_audit.txt").read_text()
     for n in re.findall(r"\d+(?:\.\d+)?%?", embed):
