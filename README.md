@@ -8,6 +8,10 @@ The paper draft for the competition's paper track is [PAPER.md](PAPER.md).
 
 ## Results
 
+![hit@5 by method](cover.png)
+
+Share of tasks with an edited file in the top five, by method, with 95% bootstrap intervals.
+
 This is how often an edited file shows up in the first five files each method returns (95% bootstrap interval, 128 tasks).
 
 | method | what it is | hit@5 |
@@ -20,7 +24,15 @@ This is how often an edited file shows up in the first five files each method re
 
 The embedding tool only takes symbol names. For 57 of the 129 issues, no name in the text matches a graph node, so it returns nothing. When a name does match, it does about as well as BM25.
 
+![hit@k by method](figures/hit_at_k.png)
+
+Edited file in the top 1, 5 and 10, on all tasks (left) and on the 71 tasks where a name from the issue matches a node (right). Shaded bands are 95% bootstrap intervals.
+
 I also looked through the released data and found a few other problems. The graph has no async functions at all. There are 67 name matches among 49,126 async definitions, but every one of them is a sync definition that happens to have the same name. Also, 21.9% of node vectors are exact copies of another node's vector. And every edge is a `calls` edge, even though the harness docs mention other types.
+
+![audit of the released graphs](figures/audit.png)
+
+Left: how many definitions in the source show up as graph nodes, summed over all snapshots. Right: test code, duplicate vectors and stub texts as a share of all nodes.
 
 ## Running it
 
@@ -36,6 +48,7 @@ python embed_audit.py # duplicate vectors and stub node texts
 python audit_extra.py # test-code share, async name matches, shared names
 python stats.py       # the tables with bootstrap intervals
 python check_paper.py # every number in PAPER.md, recomputed
+python make_figures.py # the README figures -> figures/
 ```
 
 Everything runs on a laptop CPU. `audit.py` is the slow part, because it parses every source file at 127 commits.
