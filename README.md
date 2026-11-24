@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/banner.jpg" alt="Line drawing of a call graph of code blocks, with a map pin marking one block" width="100%"></p>
+
 # Does the code graph find the bug?
 
 The Gemma 4 Developer Agent competition on Kaggle gives every agent three search tools built on a released call graph and node embeddings. I wanted to know how often they point at the code a fix actually has to change, before spending an agent's small tool budget on them.
